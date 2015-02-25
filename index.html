@@ -1,0 +1,1251 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0">
+    <title>Crossfit</title>
+	
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/animations.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/colorbox.css" />
+	<link rel="stylesheet" href="css/other-size.css" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+    <script src="js/jquery.waterwheelCarousel.js"></script>
+	
+	<!--[if IE]><script src="js/placeholder.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+		<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<script src="js/placeholder.js"></script>
+	<![endif]-->
+	
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	
+	<div class="main">
+		<div class="window-fill" id="windowFill"></div>
+	
+		<div class="popup popup_order-call" id="orderCall">
+			<div class="popup-in">
+				<div class="popup__close"></div>
+				
+				<div class="popup-trainer">
+					<div class="popup-trainer__image"><img src="images/temp/pic_15.png" alt=""/></div>
+					<div class="popup-trainer__right">
+						<div class="popup-trainer__name font-ibold">Ярослав <span class="popup-trainer__name_orange">Ремыга</span></div>
+						<div class="popup-trainer__text font-italic">"Ты в одном шаге от нового себя"</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				<div class="popup-content">
+					<form action="">
+						<input type="text" placeholder="Имя" class="input-text"/>
+						<input type="text" placeholder="Номер телефона" class="input-text"/>
+						<div class="line-text"><span class="line-text__text">или</span></div>
+						<input type="text" placeholder="Электронная почта" class="input-text"/>
+						<label class="check-agreement"><input type="checkbox" />Я согласен с <a href="#" title="Пользовательское соглашение">Пользовательским соглашением</a></label>
+						<input type="submit" class="btn-submit-orange font-bold anim-slide-top"/>
+					</form>
+				</div>
+			</div>
+		</div> <!-- end b-popup -->
+		
+		<div class="popup popup_result" id="result">
+			<div class="popup-in">
+				<div class="popup__close"></div>
+				
+				<div class="popup-content">
+					<div class="popup__title">Ваша заявка отправлена!</div>
+					<center>Мы обязательно свяжемся с Вами<br/>
+						в ближайшее время<br/>
+						по указанным контактам</center>
+				</div>
+			</div>
+		</div> <!-- end b-popup -->
+		
+		<div class="top-menu_hidden">
+			<div class="top-menu__close"></div>
+		</div>
+		
+		<div class="main__inner">
+			<header class="header__fixed">
+				
+				<div class="main__center">
+					<div class="header-logo slideDown">
+						<a href="#" title="Главная"><img src="images/header-logo.png" alt="" class="header-logo__item"/></a>
+					</div>
+					
+					<div class="top-menu-icon"></div>
+					<div class="header__number"><a href="#" title="">8 495 363 41 72</a></div>
+					
+					<a href="#" title="" class="header__fixed__3d font-italic">3D тур<br/>по Залу</a>
+					<div class="header__fixed__sep"></div>
+					
+					<div class="top-menu font-italic animation-block" data-animation-class="slideDown">
+						<div class="top-menu__item-bg"></div>
+						<ul class="top-menu-list">
+							<li class="top-menu__item active animation"><span class="top-menu__highlight"><a href="#" title="Услуги и цены" class="link">Услуги и цены</a></span></li>
+							<li class="top-menu__item animation"><a href="#" title="Расписание" class="link">Расписание</a></li>
+							<li class="top-menu__item animation"><a href="#" title="FAQ" class="link">FAQ</a></li>
+							<li class="top-menu__item animation"><a href="#" title="Блог" class="link">Блог</a></li>
+							<li class="top-menu__item animation"><a href="#" title="Контакты" class="link">Контакты</a></li>
+							<li class="clear"></li>
+						</ul> 
+					</div> <!-- end .top-menu -->
+					
+					
+					
+					<div class="clear"></div>
+				</div>
+			</header> <!-- end .header__fixed -->
+			
+			<div class="header__bottom animation-block" data-animation-class="slideLeft" data-animation-timestart="1800">
+				<div class="main__center">
+					<div class="callback-button anim-slide-top animation" onclick="showPopup($('#orderCall'))"><span class="callback-button__border">Обратный звонок</span></div>
+					<div class="header__number animation"><a href="#" title="">8 495 363 41 72</a></div>
+					<div class="clear"></div>
+				</div>
+			</div> <!-- end .header__bottom -->
+		
+			<section class="index-section main-slider">
+				<div class="main-slider__image" style="background-image:url('images/main-slider/pic_1.jpg'); display:block;">
+					<div class="main__center">
+						<div class="main-slider__text">
+							<div class="main-slider__text__white font-bold">Запишись на Кроссфит.</div>
+							<div class="main-slider__text__orange font-bold">Воспитай Силу. Характер. Выносливость</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="main-slider__image" style="background-image:url('images/main-slider/pic_2.jpg');">
+					<div class="main__center">
+						<div class="main-slider__text">
+							<div class="main-slider__text__white font-bold">Запишись на Powerlifting.</div>
+							<div class="main-slider__text__orange font-bold">Жми больше. Присядай чаще. Тяни легче.</div>
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="main__center">
+					<div class="main-slider__item">
+						<div class="main-slider__arrow main-slider__arrow_left"></div>
+						<div class="main-slider__arrow main-slider__arrow_right"></div>
+						
+						<div class="main-slider__nav"></div> <!-- end .main-slider__nav -->
+						
+						
+					</div> <!-- end .main-slider__item -->
+						
+					
+					
+				</div>
+				<div class="index-section__next"></div>
+			</section> <!-- end .index-section.main-slider -->
+			
+			<section class="index-section fighting-stars">
+				<div class="main__center">
+					<h2 class="index-section__title index-section__title_white animationRun" data-animation-class="slideDown">У НАС ТРЕНИРУЮТСЯ ЗВЕЗДЫ<br/>КИКБОКСИНГА И МУАЙ-ТАЙ</h2>
+					<div class="fighting-stars__main">
+						<img class="animationRun" src="images/fighting-stars/pic_1.png" alt="" data-animation-class="fadeIn" />
+						<div class="fighting-stars__main__name font-ibold animation-block" data-animation-class="slideLeft" data-animation-timestart="800">
+							<span class="fighting-stars__main__firstname animation">Руслан</span><br/>
+							<span class="fighting-stars__main__lastname animation">Кривуша</span>
+							<div class="fighting-stars__main__status font-reg animation">Тренер Чемпионов.</div>
+						</div>
+					</div> <!-- end .fighting-stars__main -->
+					
+					<ul class="stars-list animation-block" data-animation-class="fadeIn">
+						<li class="stars-list__item">
+							<img class="stars-list__photo animation" src="images/fighting-stars/pic_2.png" alt=""/>
+							<div class="stars-list__name animationRun" data-animation-class="rotate3DFadeIn" data-animation-timestart="800"><span class="font-bold">Сергей Харитонов</span><br/>Возраст 34 года.</div>
+							<div class="stars-list__desc animationRun" data-animation-class="fadeIn" data-animation-timestart="1000">
+								3х-кратный чемпион России по рукопашному бою, чемпион России по кикбоксингу, 2-кратный чемпион Мира по универсальному бою, чемпион Евразии по боевому самбо, неоднократный чемпион турниров по панкратиону, бронзовый призер PRIDE GP 2004 в тяжелом весе, полуфиналист Strikeforce 2011 в тяжелом весе, чемпион Мира по кикбоксингу W5 2014 в тяжелом весе.
+							</div>
+						</li>
+						<li class="stars-list__item">
+							<img class="stars-list__photo animation" src="images/fighting-stars/pic_2.png" alt=""/>
+							<div class="stars-list__name animationRun" data-animation-class="rotate3DFadeIn" data-animation-timestart="800"><span class="font-bold">Джабар Аскеров</span><br/>Возраст 28 лет.</div>
+							<div class="stars-list__desc animationRun" data-animation-class="fadeIn" data-animation-timestart="1000">
+								Весовая категория 70 кг. Чемпион Европы по Тайскому боксу WMC, чемпион Европы по Кикбоксингу IAKSA, чемпион Европы по Кикбоксингу W5, 2х-кратный Чемпион Мира по правилам TNA.
+							</div>
+						</li>
+						<li class="stars-list__item">
+							<img class="stars-list__photo animation" src="images/fighting-stars/pic_2.png" alt=""/>
+							<div class="stars-list__name animationRun" data-animation-class="rotate3DFadeIn" data-animation-timestart="800"><span class="font-bold">Ярослав Ремыга</span><br/>Возраст 21 лет.</div>
+							<div class="stars-list__desc animationRun" data-animation-class="fadeIn" data-animation-timestart="1000">
+								МСМК по Тайскому боксу. Весовая категория 86 кг. 2х-кратный Чемпион Мира по Тайскому боксу IFMA Чемпион Европы по Тайскому боксу IFMA. 5ти-кратный Чемпион Украины по Тайскому 
+							</div>
+						</li>
+						<li class="stars-list__item">
+							<img class="stars-list__photo animation" src="images/fighting-stars/pic_2.png" alt=""/>
+							<div class="stars-list__name animationRun" data-animation-class="rotate3DFadeIn" data-animation-timestart="800"><span class="font-bold">Алим Набиев</span><br/>Возраст 19 лет.</div>
+							<div class="stars-list__desc animationRun" data-animation-class="fadeIn" data-animation-timestart="1000">
+								МС по Кикбоксингу. Весовая категория 70 кг. Чемпион Мира по Кикбоксингу WPKA. Чемпион Мира по Тайскому боксу IFMA. Чемпион Европы по Кикбоксингу ISKA. Чемпион Мира по Кикбоксингу W5.
+							</div>
+						</li>
+						<li class="stars-list__item">
+							<img class="stars-list__photo animation" src="images/fighting-stars/pic_2.png" alt=""/>
+							<div class="stars-list__name animationRun" data-animation-class="rotate3DFadeIn" data-animation-timestart="800"><span class="font-bold">Турал Байрамов</span><br/>Возраст 28 лет.</div>
+							<div class="stars-list__desc animationRun" data-animation-class="fadeIn" data-animation-timestart="1000">
+								Весовая категория 72 кг. Чемпион мира по Кикбоксингу WPKA. Чемпион мира по Кикбоксингу KOK. Многократный Чемпион Азербайджана по Кикбоксингу.
+							</div>
+						</li>
+						<li class="stars-list__item">
+							<img class="stars-list__photo animation" src="images/fighting-stars/pic_2.png" alt=""/>
+							<div class="stars-list__name animationRun" data-animation-class="rotate3DFadeIn" data-animation-timestart="800"><span class="font-bold">Александр Новиков</span><br/>Возраст 21 год.</div>
+							<div class="stars-list__desc animationRun" data-animation-class="fadeIn" data-animation-timestart="1000">
+								КМС по Боксу, КМС по Тайскому боксу. Весовая категория 81 кг. Стаж занятий 5 лет. Призер чемпионата Европы по Кикбоксингу. Чемпион ЦФО по Тайскому боксу. Чемпион Москвы по Тайскому боксу.
+							</div>
+						</li>
+						<li class="stars-list__item">
+							<img class="stars-list__photo animation" src="images/fighting-stars/pic_2.png" alt=""/>
+							<div class="stars-list__name animationRun" data-animation-class="rotate3DFadeIn" data-animation-timestart="800"><span class="font-bold">Даулет Отарбаев </span><br/>Возраст 29 лет.</div>
+							<div class="stars-list__desc animationRun" data-animation-class="fadeIn" data-animation-timestart="1000">
+								МС по Тайскому боксу. Обладатель кубка Короля Тайланда, победитель "Diamond Fight - Дружба" 2014, участник К-1 World Max.
+							</div>
+						</li>
+						<li class="clear"></li>
+					</ul> <!-- end .stars-list -->
+					
+					
+					<div class="fighting-stars__register">
+						<a class="fighting-stars__register__link anim-fill-orange animationRun" href="javascript:void(0)" title="" data-animation-class="rotate3DFadeIn" data-animation-timestart="1200"><b>Записаться на тренировку</b></a>
+					</div>
+					<div class="index-section__next"></div>
+				</div>
+			</section> <!-- end .index-section.fighting-stars -->
+		
+			<section class="index-section schedule">
+				<div class="main__center">
+					<h2 class="index-section__title animationRun" data-animation-class="slideDown">Расписание тренировок</h2>
+					
+					<ul class="hor-list hor-list_training-type font-italic animation-block" data-animation-class="slideDown">
+						<li class="hor-list__item hor-list__item_noactive hor-list__item_width_1 animation">
+							<div class="hor-list__bg">
+								<div class="hor-list__text font-ibold"><div class="hor-list__cell">Вид тренировок</div></div>
+							</div>
+						</li>
+						<li class="hor-list__item hor-list__item_width_2 animation">
+							<div class="hor-list__bg">
+								<div class="hor-list__text"><div class="hor-list__cell">Бокс</div></div>
+							</div>
+						</li>
+						<li class="hor-list__item hor-list__item_width_4 animation">
+							<div class="hor-list__bg">
+								<div class="hor-list__text"><div class="hor-list__cell">Muay Thai</div></div>
+							</div>
+						</li>
+						<li class="hor-list__item hor-list__item_width_4 animation">
+							<div class="hor-list__bg">
+								<div class="hor-list__text"><div class="hor-list__cell">Кикбоксинг</div></div>
+							</div>
+						</li>
+						<li class="hor-list__item hor-list__item_active hor-list__item_width_4 animation">
+							<div class="hor-list__bg">
+								<div class="hor-list__text"><div class="hor-list__cell">Джиу Джитсу</div></div>
+							</div>
+						</li>
+						<li class="hor-list__item hor-list__item_last hor-list__item_width_5 animation">
+							<div class="hor-list__bg">
+								<div class="hor-list__text"><div class="hor-list__cell">Смешанные Единоборства</div></div>
+							</div>
+						</li>
+						<li class="clear"></li>
+					</ul> <!-- end .hor-list -->
+					
+					<ul class="hor-list hor-list_teachers font-italic animation-block" data-animation-class="slideDown" data-animation-timestart="500">
+						<li class="hor-list__item hor-list__item_noactive hor-list__item_width_1 animation">
+							<div class="hor-list__bg">
+								<div class="hor-list__text font-ibold"><div class="hor-list__cell">Тренер</div></div>
+							</div>
+						</li>
+						<li class="hor-list__item hor-list__item_width_3 animation">
+							<div class="hor-list__bg">
+								<div class="hor-list__text"><div class="hor-list__cell">Сергей<br/>Харитонов</div></div>
+							</div>
+						</li>
+						<li class="hor-list__item hor-list__item_active hor-list__item_width_3 animation">
+							<div class="hor-list__bg">
+								<div class="hor-list__text"><div class="hor-list__cell">Ярослав<br/>Ремыга</div></div>
+							</div>
+						</li>
+						<li class="hor-list__item hor-list__item_width_3 animation">
+							<div class="hor-list__bg">
+								<div class="hor-list__text"><div class="hor-list__cell">Джабар<br/>Аскеров</div></div>
+							</div>
+						</li>
+						<li class="hor-list__item hor-list__item_width_3 animation">
+							<div class="hor-list__bg">
+								<div class="hor-list__text"><div class="hor-list__cell">Алим<br/>Набиев</div></div>
+							</div>
+						</li>
+						<li class="hor-list__item hor-list__item_width_3 animation">
+							<div class="hor-list__bg">
+								<div class="hor-list__text"><div class="hor-list__cell">Турал<br/>Байрамов</div></div>
+							</div>
+						</li>
+						<li class="hor-list__item hor-list__item_width_3 animation">
+							<div class="hor-list__bg">
+								<div class="hor-list__text"><div class="hor-list__cell">Александр<br/>Новиков</div></div>
+							</div>
+						</li>
+						<li class="hor-list__item hor-list__item_last hor-list__item_width_3 animation">
+							<div class="hor-list__bg">
+								<div class="hor-list__text"><div class="hor-list__cell">Даулет<br/>Отарбаев</div></div>
+							</div>
+						</li>
+						<li class="clear"></li>
+					</ul> <!-- end .hor-list -->
+					
+					<div class="schedule-table font-italic">
+						<table>
+							<thead>
+								<tr>
+									<td></td>
+									<td>Пн.</td>
+									<td>Вт.</td>
+									<td>Ср.</td>
+									<td>Чт.</td>
+									<td>Пт.</td>
+									<td>Сб.</td>
+									<td>Вс.</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="font-reg">7:30</td>
+									<td></td>
+									<td></td>
+									<td>
+										<div class="schedule-table__item">
+											<div class="schedule-table__cell-bg"><div class="schedule-table__cell-bg__inner"></div></div>
+											<span class="schedule-table__text">Джиу Джитсу</span>
+											<img src="images/schedule-item-icon.png" alt="" class="schedule-table__icon"/>
+											
+											<div class="schedule-table__info">
+												<div class="schedule-table__info__inner">
+													<div class="schedule-table__info__photo"><img src="images/temp/pic_1.png" alt=""/></div>
+													<div class="schedule-table__info__small-photo"><img src="images/temp/pic_1_small.png" alt=""/></div>
+													<div class="schedule-table__info__text-block">
+														<div class="schedule-table__info__title font-ibold">Ярослав Ремыга<span class="schedule-table__info__type font-italic">Джиу Джитсу</span></div>
+														<div class="schedule-table__info__about">
+															МСМК по Тайскому боксу.
+															2х-кратный Чемпион Мира по
+															Тайскому боксу IFMA
+														</div>
+														<div class="schedule-table__info__weight">Весовая категория 86 кг.<br/><a href="#" title="Узнать больше" class="link">Узнать больше</a></div>
+														<div class="schedule-table__info__link-border anim-slide-top font-ibold"><a href="#" title="" class="link">Записаться на тренировку</a></div>
+													</div>
+													<div class="clear"></div>
+												</div>
+												
+												<div class="schedule-table__info__close"></div>
+											</div> <!-- end .schedule-table__info -->
+										</div>
+									</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>
+										<div class="schedule-table__item">
+											<div class="schedule-table__cell-bg"><div class="schedule-table__cell-bg__inner"></div></div>
+											<span class="schedule-table__text">Джиу Джитсу</span>
+											<img src="images/schedule-item-icon.png" alt="" class="schedule-table__icon"/>
+											
+											<div class="schedule-table__info">
+												<div class="schedule-table__info__inner">
+													<div class="schedule-table__info__photo"><img src="images/temp/pic_1.png" alt=""/></div>
+													<div class="schedule-table__info__small-photo"><img src="images/temp/pic_1_small.png" alt=""/></div>
+													<div class="schedule-table__info__text-block">
+														<div class="schedule-table__info__title font-ibold">Ярослав Ремыга<span class="schedule-table__info__type font-italic">Джиу Джитсу</span></div>
+														<div class="schedule-table__info__about">
+															МСМК по Тайскому боксу.
+															2х-кратный Чемпион Мира по
+															Тайскому боксу IFMA
+														</div>
+														<div class="schedule-table__info__weight">Весовая категория 86 кг.<br/><a href="#" title="Узнать больше" class="link">Узнать больше</a></div>
+														<div class="schedule-table__info__link-border anim-slide-top font-ibold"><a href="#" title="" class="link">Записаться на тренировку</a></div>
+													</div>
+													<div class="clear"></div>
+												</div>
+												
+												<div class="schedule-table__info__close"></div>
+											</div> <!-- end .schedule-table__info -->
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="font-reg">10:30</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="font-reg">12:00</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="font-reg">13:30</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="font-reg">14:00</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="font-reg">15:00</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="font-reg">16:00</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="font-reg">17:00</td>
+									<td></td>
+									<td>
+										<div class="schedule-table__item">
+											<div class="schedule-table__cell-bg"><div class="schedule-table__cell-bg__inner"></div></div>
+											<span class="schedule-table__text">Джиу Джитсу</span>
+											<img src="images/schedule-item-icon.png" alt="" class="schedule-table__icon"/>
+											
+											<div class="schedule-table__info">
+												<div class="schedule-table__info__inner">
+													<div class="schedule-table__info__photo"><img src="images/temp/pic_1.png" alt=""/></div>
+													<div class="schedule-table__info__small-photo"><img src="images/temp/pic_1_small.png" alt=""/></div>
+													<div class="schedule-table__info__text-block">
+														<div class="schedule-table__info__title font-ibold">Ярослав Ремыга<span class="schedule-table__info__type font-italic">Джиу Джитсу</span></div>
+														<div class="schedule-table__info__about">
+															МСМК по Тайскому боксу.
+															2х-кратный Чемпион Мира по
+															Тайскому боксу IFMA
+														</div>
+														<div class="schedule-table__info__weight">Весовая категория 86 кг.<br/><a href="#" title="Узнать больше" class="link">Узнать больше</a></div>
+														<div class="schedule-table__info__link-border anim-slide-top font-ibold"><a href="#" title="" class="link">Записаться на тренировку</a></div>
+													</div>
+													<div class="clear"></div>
+												</div>
+												
+												<div class="schedule-table__info__close"></div>
+											</div> <!-- end .schedule-table__info -->
+										</div>
+									</td>
+									<td>
+										<div class="schedule-table__item">
+											<div class="schedule-table__cell-bg"><div class="schedule-table__cell-bg__inner"></div></div>
+											<span class="schedule-table__text">Джиу Джитсу</span>
+											<img src="images/schedule-item-icon.png" alt="" class="schedule-table__icon"/>
+											
+											<div class="schedule-table__info">
+												<div class="schedule-table__info__inner">
+													<div class="schedule-table__info__photo"><img src="images/temp/pic_1.png" alt=""/></div>
+													<div class="schedule-table__info__small-photo"><img src="images/temp/pic_1_small.png" alt=""/></div>
+													<div class="schedule-table__info__text-block">
+														<div class="schedule-table__info__title font-ibold">Ярослав Ремыга<span class="schedule-table__info__type font-italic">Джиу Джитсу</span></div>
+														<div class="schedule-table__info__about">
+															МСМК по Тайскому боксу.
+															2х-кратный Чемпион Мира по
+															Тайскому боксу IFMA
+														</div>
+														<div class="schedule-table__info__weight">Весовая категория 86 кг.<br/><a href="#" title="Узнать больше" class="link">Узнать больше</a></div>
+														<div class="schedule-table__info__link-border anim-slide-top font-ibold"><a href="#" title="" class="link">Записаться на тренировку</a></div>
+													</div>
+													<div class="clear"></div>
+												</div>
+												
+												<div class="schedule-table__info__close"></div>
+											</div> <!-- end .schedule-table__info -->
+										</div>
+									</td>
+									<td>
+										<div class="schedule-table__item">
+											<div class="schedule-table__cell-bg"><div class="schedule-table__cell-bg__inner"></div></div>
+											<span class="schedule-table__text">Джиу Джитсу</span>
+											<img src="images/schedule-item-icon.png" alt="" class="schedule-table__icon"/>
+											
+											<div class="schedule-table__info">
+												<div class="schedule-table__info__inner">
+													<div class="schedule-table__info__photo"><img src="images/temp/pic_1.png" alt=""/></div>
+													<div class="schedule-table__info__small-photo"><img src="images/temp/pic_1_small.png" alt=""/></div>
+													<div class="schedule-table__info__text-block">
+														<div class="schedule-table__info__title font-ibold">Ярослав Ремыга<span class="schedule-table__info__type font-italic">Джиу Джитсу</span></div>
+														<div class="schedule-table__info__about">
+															МСМК по Тайскому боксу.
+															2х-кратный Чемпион Мира по
+															Тайскому боксу IFMA
+														</div>
+														<div class="schedule-table__info__weight">Весовая категория 86 кг.<br/><a href="#" title="Узнать больше" class="link">Узнать больше</a></div>
+														<div class="schedule-table__info__link-border anim-slide-top font-ibold"><a href="#" title="" class="link">Записаться на тренировку</a></div>
+													</div>
+													<div class="clear"></div>
+												</div>
+												
+												<div class="schedule-table__info__close"></div>
+											</div> <!-- end .schedule-table__info -->
+										</div>
+									</td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="font-reg">17:30</td>
+									<td></td>
+									<td>
+									</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="font-reg">19:00</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="font-reg">20:30</td>
+									<td></td>
+									<td>
+										
+									</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div> <!-- end .schedule-table -->
+				</div>
+				
+				<div class="index-section__next"></div>
+			</section> <!-- end .index-section.schedule -->
+			
+			<section class="index-section teachers">
+				<div class="main__center">
+					<h2 class="index-section__title index-section__title_white animationRun" data-animation-class="slideDown">Наши тренеры</h2>
+					
+					<div class="fade-in-slider fade-in-slider_teachers">
+					
+						<div class="fade-in-slider__item" style="display:block">
+							<div class="teachers__photo animationRun" data-animation-class="opacity"><img src="images/temp/pic_2.png" alt=""/></div>
+							<div class="teachers__info font-italic">
+								<div class="teachers__right animation-block" data-animation-class="slideLeft">
+									<div class="teachers__title font-ibold animation">Ярослав<br/>Ремыга</div>
+									<div class="teachers__age animation">Возраст 21 год.</div>
+									
+									<div class="teachers__line"></div>
+									
+									<ul class="teachers__achiev">
+										<li class="teachers__achiev__item animation">МСМК по Тайскому боксу. 2х-кратный Чемпион Мира по Тайскому боксу IFMA.</li>
+										<li class="teachers__achiev__item animation">Чемпион Европы по Тайскому боксу IFMA. 5ти-кратный Чемпион Украины по Тайскому боксу.</li>
+										<li class="teachers__achiev__item animation">Весовая категория 86 кг.</li>
+									</ul>
+									
+									<div class="teachers__line"></div>
+								</div> <!-- end .teachers__right -->
+								
+								<div class="clear"></div>
+								
+								<div class="teachers__schedule" >
+									<div class="teachers__right"><div class="teachers__age animationRun" data-animation-class="slideLeft" data-animation-timestart="500">Расписание Тренера</div></div>
+									<div class="clear"></div>
+									
+									<div class="teachers__schedule__list animation-block" data-animation-class="rotate3DFadeIn" data-animation-timestart="700">
+										<span class="teachers__schedule__item animation">Понедельник 16:00</span>
+										<span class="teachers__schedule__item animation">Понедельник 16:00</span>
+										<span class="teachers__schedule__item animation">Понедельник 16:00</span>
+										<span class="teachers__schedule__item animation">Понедельник 16:00</span>
+										<span class="teachers__schedule__item animation">Понедельник 16:00</span>
+										<span class="teachers__schedule__item animation">Понедельник 16:00</span>
+									</div>
+								</div> <!-- end .teachers__schedule -->
+								
+								<div class="clear"></div>
+								
+								<div class="teachers__right">
+									<a href="#" class="teachers__link anim-fill-orange font-ibold animationRun" title="Записаться на персональную тренировку" data-animation-class="rotate3DFadeIn" data-animation-timestart="800">Записаться на<br/>персональную тренировку</a>
+								</div>
+								
+								<div class="clear"></div>
+							</div> <!-- end .teachers__info -->
+							<div class="clear"></div>
+						</div> <!-- end .fade-in-slider__item -->
+						
+						<div class="fade-in-slider__item">
+							<div class="teachers__photo"><img src="images/temp/pic_2.png" alt=""/></div>
+							<div class="teachers__info font-italic">
+								<div class="teachers__right">
+									<div class="teachers__title font-ibold">Турал<br/>Байрамов</div>
+									<div class="teachers__age">Возраст 32 года.</div>
+									
+									<div class="teachers__line"></div>
+									
+									<ul class="teachers__achiev">
+										<li class="teachers__achiev__item">МСМК по Тайскому боксу. 2х-кратный Чемпион Мира по Тайскому боксу IFMA.</li>
+										<li class="teachers__achiev__item">Чемпион Европы по Тайскому боксу IFMA. 5ти-кратный Чемпион Украины по Тайскому боксу.</li>
+										<li class="teachers__achiev__item">Весовая категория 86 кг.</li>
+										<li class="teachers__achiev__item">Весовая категория 86 кг.</li>
+									</ul>
+									
+									<div class="teachers__line"></div>
+								</div> <!-- end .teachers__right -->
+								
+								<div class="clear"></div>
+								
+								<div class="teachers__schedule">
+									<div class="teachers__right"><div class="teachers__age">Расписание Тренера</div></div>
+									<div class="clear"></div>
+									
+									<div class="teachers__schedule__list">
+										<span class="teachers__schedule__item">Понедельник 16:00</span>
+										<span class="teachers__schedule__item">Вторник 16:00</span>
+										<span class="teachers__schedule__item">Среда 16:00</span>
+									</div>
+								</div> <!-- end .teachers__schedule -->
+								
+								<div class="clear"></div>
+								
+								<div class="teachers__right">
+									<a href="#" class="teachers__link anim-fill-orange font-ibold" title="Записаться на персональную тренировку">Записаться на<br/>персональную тренировку</a>
+								</div>
+								
+								<div class="clear"></div>
+							</div> <!-- end .teachers__info -->
+							<div class="clear"></div>
+						</div> <!-- end .fade-in-slider__item -->
+						
+						<div class="fade-in-slider__item">
+							<div class="teachers__photo"><img src="images/temp/pic_2.png" alt=""/></div>
+							<div class="teachers__info font-italic">
+								<div class="teachers__right">
+									<div class="teachers__title font-ibold">Джабар<br/>Аскеров</div>
+									<div class="teachers__age">Возраст 28 лет.</div>
+									
+									<div class="teachers__line"></div>
+									
+									<ul class="teachers__achiev">
+										<li class="teachers__achiev__item">МСМК по Тайскому боксу. 2х-кратный Чемпион Мира по Тайскому боксу IFMA.</li>
+										<li class="teachers__achiev__item">Чемпион Европы по Тайскому боксу IFMA. 5ти-кратный Чемпион Украины по Тайскому боксу.</li>
+									</ul>
+									
+									<div class="teachers__line"></div>
+								</div> <!-- end .teachers__right -->
+								
+								<div class="clear"></div>
+								
+								<div class="teachers__schedule">
+									<div class="teachers__right"><div class="teachers__age">Расписание Тренера</div></div>
+									<div class="clear"></div>
+									
+									<div class="teachers__schedule__list">
+										<span class="teachers__schedule__item">Понедельник 16:00</span>
+										<span class="teachers__schedule__item">Вторник 16:00</span>
+										<span class="teachers__schedule__item">Среда 16:00</span>
+										<span class="teachers__schedule__item">Среда 16:00</span>
+									</div>
+								</div> <!-- end .teachers__schedule -->
+								
+								<div class="clear"></div>
+								
+								<div class="teachers__right">
+									<a href="#" class="teachers__link anim-fill-orange font-ibold" title="Записаться на персональную тренировку">Записаться на<br/>персональную тренировку</a>
+								</div>
+								
+								<div class="clear"></div>
+							</div> <!-- end .teachers__info -->
+							<div class="clear"></div>
+						</div> <!-- end .fade-in-slider__item -->
+						
+						<div class="fade-in-slider__arrow fade-in-slider__arrow_left"></div>
+						<div class="fade-in-slider__arrow fade-in-slider__arrow_right"></div>
+					</div> <!-- end .fade-in-slider -->
+				</div>
+				
+				<div class="index-section__next"></div>
+			</section> <!-- end .index-section.teachers -->
+			
+			<section class="index-section services">
+				<div class="main__center">
+					<h2 class="index-section__title animationRun" data-animation-class="slideDown">Услуги и цены</h2>
+					
+					<div class="services-calc">
+						<div class="services-calc__title">Подбери оптимальную программу</div>
+						
+						<div class="services-calc__item">
+							<ul class="hor-list font-italic animation-block" data-animation-class="slideDown">
+								<li class="hor-list__item hor-list__item_noactive hor-list__item_num hor-list__item_num_active animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text font-ibold"><div class="hor-list__cell">1</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_noactive hor-list__item_width_1 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text font-ibold"><div class="hor-list__cell">Вид Единоборств</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_2 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Бокс</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_4 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Muay Thai</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_4 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Кикбоксинг</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_4 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Джиу Джитсу</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_last hor-list__item_width_5 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Смешанные Единоборства</div></div>
+									</div>
+								</li>
+								<li class="clear"></li>
+							</ul> <!-- end .hor-list -->
+						</div> <!-- end .services-calc__item -->
+						
+						<div class="services-calc__item services-calc__item_noactive">
+							<ul class="hor-list font-italic animation-block" data-animation-class="slideDown">
+								<li class="hor-list__item hor-list__item_noactive hor-list__item_num animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text font-ibold"><div class="hor-list__cell">2</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_noactive hor-list__item_width_1 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text font-ibold"><div class="hor-list__cell">Желаемый Эффект</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_2 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Бокс</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_4 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Muay Thai</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_4 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Кикбоксинг</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_4 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Джиу Джитсу</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_last hor-list__item_width_5 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Смешанные Единоборства</div></div>
+									</div>
+								</li>
+								<li class="clear"></li>
+							</ul> <!-- end .hor-list -->
+						</div> <!-- end .services-calc__item -->
+						
+						<div class="services-calc__item services-calc__item_noactive">
+							<ul class="hor-list font-italic animation-block" data-animation-class="slideDown">
+								<li class="hor-list__item hor-list__item_noactive hor-list__item_num animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text font-ibold"><div class="hor-list__cell">3</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_noactive hor-list__item_width_1 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text font-ibold"><div class="hor-list__cell">Формат Тренировки</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_2 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Бокс</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_4 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Muay Thai</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_4 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Кикбоксинг</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_4 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Джиу Джитсу</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_last hor-list__item_width_5 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Смешанные Единоборства</div></div>
+									</div>
+								</li>
+								<li class="clear"></li>
+							</ul> <!-- end .hor-list -->
+						</div> <!-- end .services-calc__item -->
+						
+						<div class="services-calc__item services-calc__item_noactive">
+							<ul class="hor-list font-italic animation-block" data-animation-class="slideDown">
+								<li class="hor-list__item hor-list__item_noactive hor-list__item_num animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text font-ibold"><div class="hor-list__cell">4</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_noactive hor-list__item_width_1 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text font-ibold"><div class="hor-list__cell">Тренер</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_2 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Бокс</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_4 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Muay Thai</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_4 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Кикбоксинг</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_4 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Джиу Джитсу</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_last hor-list__item_width_5 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Смешанные Единоборства</div></div>
+									</div>
+								</li>
+								<li class="clear"></li>
+							</ul> <!-- end .hor-list -->
+						</div> <!-- end .services-calc__item -->
+						
+						<div class="services-calc__item services-calc__item_noactive">
+							<ul class="hor-list font-italic animation-block" data-animation-class="slideDown">
+								<li class="hor-list__item hor-list__item_noactive hor-list__item_num animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text font-ibold"><div class="hor-list__cell">5</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_noactive hor-list__item_width_1 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text font-ibold"><div class="hor-list__cell">Срок карты</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_2 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Бокс</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_4 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Muay Thai</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_4 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Кикбоксинг</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_width_4 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Джиу Джитсу</div></div>
+									</div>
+								</li>
+								<li class="hor-list__item hor-list__item_last hor-list__item_width_5 animation">
+									<div class="hor-list__bg">
+										<div class="hor-list__text"><div class="hor-list__cell">Смешанные Единоборства</div></div>
+									</div>
+								</li>
+								<li class="clear"></li>
+							</ul> <!-- end .hor-list -->
+						</div> <!-- end .services-calc__item -->
+						
+						<div class="services-calc__buttons">
+							<a href="#" class="services-calc__ask-price anim-slide-top font-bold" title="Запросить стоимость">Запросить стоимость</a>
+							<br/>
+							<span class="services-calc__advice">Чтобы добиться лучших результатов мы советуем вам</span>
+							<br/>
+							<a href="#" class="services-calc__personal-link anim-slide-top font-bold" title="Записаться на персональную тренировку">Записаться на персональную тренировку</a>
+						</div> <!-- end .services-calc__buttons -->
+					</div> <!-- end .services-calc -->
+					
+					<div class="services-special animation-block" data-animation-class="slideLeft">
+						<a class="services-special__item animation" href="#" title="Спец предложение">
+							<img src="images/temp/pic_3.jpg" alt="" class="services-special__photo"/>
+							<span class="services-special__text"><span class="services-special__text__align">Спец предложение</span></span>
+						</a> <!-- end .services-special__item -->
+						
+						<a class="services-special__item animation" href="#" title="Спец предложение">
+							<img src="images/temp/pic_3.jpg" alt="" class="services-special__photo"/>
+							<span class="services-special__text"><span class="services-special__text__align">Спец предложение</span></span>
+						</a> <!-- end .services-special__item -->
+						
+						<a class="services-special__item animation" href="#" title="Спец предложение">
+							<img src="images/temp/pic_3.jpg" alt="" class="services-special__photo"/>
+							<span class="services-special__text"><span class="services-special__text__align">Спец предложение</span></span>
+						</a> <!-- end .services-special__item -->
+						<div class="clear"></div>
+					</div> <!-- end .services-special -->
+					
+				</div>
+				
+				<div class="index-section__next"></div>
+			</section> <!-- end .index-section.services -->
+			
+			<section class="index-section photo-video">
+				<div class="main__center">
+					<h2 class="index-section__title index-section__title_white animationRun" data-animation-class="slideDown">Фото и видео</h2>
+					
+					<div class="r-sections">
+						<div class="r-sections__circle">
+							<div class="r-sections__item">Бассейн</div>
+							<div class="r-sections__item">Бассейн</div>
+							<div class="r-sections__item">Тренировка</div>
+							<div class="r-sections__item">Зал</div>
+							<div class="r-sections__item">Тренировка</div>
+							<div class="r-sections__item">Бассейн</div>
+							<div class="r-sections__item">Бассейн</div>
+						</div>
+					</div>
+					
+					<div class="carousel-3d" id="3d-carousel">
+						<a href="images/temp/pic_11.jpg" rel="photo" class="carousel-3d__link"><img src="images/temp/pic_8.jpg" alt="Image 1" class="carousel-3d__item" /></a>
+						<a href="images/main-slider/pic_2.jpg" rel="photo" class="carousel-3d__link"><img src="images/temp/pic_8.jpg" alt="Image 1" class="carousel-3d__item" /></a>
+						<a href="images/temp/pic_11.jpg" rel="photo" class="carousel-3d__link"><img src="images/temp/pic_8.jpg" alt="Image 1" class="carousel-3d__item" /></a>
+						<a href="images/main-slider/pic_2.jpg" rel="photo" class="carousel-3d__link"><img src="images/temp/pic_8.jpg" alt="Image 1" class="carousel-3d__item" /></a>
+						<a href="images/temp/pic_11.jpg" rel="photo" class="carousel-3d__link"><img src="images/temp/pic_8.jpg" alt="Image 1" class="carousel-3d__item" /></a>
+						<a href="images/main-slider/pic_2.jpg" rel="photo" class="carousel-3d__link"><img src="images/temp/pic_8.jpg" alt="Image 1" class="carousel-3d__item" /></a>
+						<a href="images/temp/pic_11.jpg" rel="photo" class="carousel-3d__link"><img src="images/temp/pic_8.jpg" alt="Image 1" class="carousel-3d__item" /></a>
+						<a href="images/main-slider/pic_2.jpg" rel="photo" class="carousel-3d__link"><img src="images/temp/pic_8.jpg" alt="Image 1" class="carousel-3d__item" /></a>
+					
+						
+						<div class="carousel-3d__arrow carousel-3d__arrow_left"></div>
+						<div class="carousel-3d__arrow carousel-3d__arrow_right"></div>
+					</div>
+					
+					<div class="carousel-3d carousel-3d_margin" id="3d-carousel">
+						<img src="images/temp/pic_10.jpg" alt="Image 1" class="carousel-3d__item" />
+						<img src="images/temp/pic_10.jpg" alt="Image 1" class="carousel-3d__item" />
+						<img src="images/temp/pic_10.jpg" alt="Image 1" class="carousel-3d__item" />
+						<img src="images/temp/pic_10.jpg" alt="Image 1" class="carousel-3d__item" />
+						<img src="images/temp/pic_10.jpg" alt="Image 1" class="carousel-3d__item" />
+						<img src="images/temp/pic_10.jpg" alt="Image 1" class="carousel-3d__item" />
+						<img src="images/temp/pic_10.jpg" alt="Image 1" class="carousel-3d__item" />
+						<img src="images/temp/pic_10.jpg" alt="Image 1" class="carousel-3d__item" />
+						<img src="images/temp/pic_10.jpg" alt="Image 1" class="carousel-3d__item" />
+						
+						<div class="carousel-3d__arrow carousel-3d__arrow_left"></div>
+						<div class="carousel-3d__arrow carousel-3d__arrow_right"></div>
+					</div>
+					
+				</div>
+				
+				<div class="index-section__next"></div>
+			</section> <!-- end .index-section.photo-video -->
+			
+			<section class="index-section reviews">
+				<div class="main__center">
+					<h2 class="index-section__title index-section__title_white animationRun" data-animation-class="slideDown">Отзывы</h2>
+					<div class="fade-in-slider fade-in-slider_reviews">
+						
+						<div class="fade-in-slider__item" style="display:block">
+							<div class="reviews__item">
+								<div class="reviews__left animationRun" data-animation-class="opacity"><img class="reviews__photo" src="images/temp/pic_4.png" alt=""/></div>
+								<div class="reviews__right animation-block" data-animation-class="slideLeft">
+									<div class="reviews__name font-ibold animation">Владимир <span class="reviews__name__item reviews__name__item_orange">Путин</span></div>
+									<div class="reviews__review font-italic animation">"Важно быть сконцентрированным<br/>на сопернике весь бой, до последней секунды"</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div> <!-- end .fade-in-slider__item -->
+						
+						<div class="fade-in-slider__item">
+							<div class="reviews__item">
+								<div class="reviews__left"><img class="reviews__photo" src="images/temp/pic_4.png" alt=""/></div>
+								<div class="reviews__right">
+									<div class="reviews__name font-ibold">Иван <span class="reviews__name__item reviews__name__item_orange">Иванович</span></div>
+									<div class="reviews__review font-italic">"Тяжело на тренировке - легко в бою!"</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div> <!-- end .fade-in-slider__item -->
+						
+						
+						<div class="fade-in-slider__arrow fade-in-slider__arrow_left"></div>
+						<div class="fade-in-slider__arrow fade-in-slider__arrow_right"></div>
+					</div> <!-- end .fade-in-slider -->
+				</div>
+			</section> <!-- end .index-section.reviews -->
+			
+			<section class="index-section blog">
+				<div class="main__center">
+					<h2 class="index-section__title animationRun" data-animation-class="slideDown">Блог</h2>
+					
+					<div class="blog-hidden-list">
+						<div id="blogItem_1" class="blog-hidden-list__item">
+							<div class="blog-hidden-list__inner">
+								<h3 class="title font-bold">Открылся новый зал</h3>
+								<img src="images/temp/pic_12.jpg" alt=""/>
+								<p>Россфит призван к любой жизненной ситуации, требующей активных физических
+								действий. За счет масштабируемости нагрузок Кроссфит дает возможность людям
+								любого уровня физической подготовки, возраста, физиологических особенностей
+								достичь отличных результатов в зависимости от поставленных целей – улучшить
+								функциональную подготовленность, силовые показатели,</p>
+								<p>Россфит призван к любой жизненной ситуации, требующей активных физических
+								действий. За счет масштабируемости нагрузок Кроссфит дает возможность людям
+								любого уровня физической подготовки, возраста, физиологических особенностей
+								достичь отличных результатов в зависимости от поставленных целей – улучшить
+								функциональную подготовленность, силовые показатели,</p>
+							</div>
+						</div>
+						
+						<div id="blogItem_2" class="blog-hidden-list__item">
+							<div class="blog-hidden-list__inner">
+								<h3 class="title font-bold">Как я стал чемпионом мира</h3>
+								<p>Россфит призван к любой жизненной ситуации, требующей активных физических
+								действий. За счет масштабируемости нагрузок Кроссфит дает возможность людям
+								любого уровня физической подготовки, возраста, физиологических особенностей
+								достичь отличных результатов в зависимости от поставленных целей – улучшить
+								функциональную подготовленность, силовые показатели,</p>
+								<img src="images/temp/pic_12.jpg" alt=""/>
+								
+								<p>Россфит призван к любой жизненной ситуации, требующей активных физических
+								действий. За счет масштабируемости нагрузок Кроссфит дает возможность людям
+								любого уровня физической подготовки, возраста, физиологических особенностей
+								достичь отличных результатов в зависимости от поставленных целей – улучшить
+								функциональную подготовленность, силовые показатели,</p>
+								<img src="images/temp/pic_12.jpg" alt=""/>
+							</div>
+						</div>
+					</div> <!-- end .blog-hidden-list -->
+					
+					<div class="fade-in-slider fade-in-slider_blog">
+						
+						<div class="fade-in-slider__item" style="display:block">
+							<div class="blog__item">
+								<div class="blog__left animationRun" data-animation-class="opacity"><img class="blog__photo" src="images/temp/pic_5.jpg" alt=""/></div>
+								<div class="blog__right animation-block" data-animation-class="slideLeft">
+									<h3 class="blog__item__title font-ibold animation">Открылся новый зал</h3>
+									<div class="blog__item__text font-italic animation">
+										Россфит призван к любой жизненной ситуации,
+										требующей активных физических действий.
+										За счет масштабируемости нагрузок Кроссфит дает
+										возможность людям любого уровня физической
+										подготовки, возраста, физиологических особенностей.
+									</div>
+									<div class="blog__item__text_small font-italic animation">
+										Россфит призван к любой жизненной ситуации,
+										требующей активных физических действий.
+									</div>
+									<a href="#blogItem_1" rel="blog" title="Подробнее" class="blog__item__link anim-slide-top font-bold animation">Подробнее</a>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div> <!-- end .fade-in-slider__item -->
+						
+						<div class="fade-in-slider__item">
+							<div class="blog__item">
+								<div class="blog__left"><img class="blog__photo" src="images/temp/pic_5.jpg" alt=""/></div>
+								<div class="blog__right">
+									<h3 class="blog__item__title font-ibold">Как я стал чемпионом мира</h3>
+									<div class="blog__item__text font-italic">
+										Текст текст текст
+									</div>
+									<div class="blog__item__text_small font-italic">
+										Текст текст текст
+									</div>
+									<a href="#blogItem_2" rel="blog" title="Подробнее" class="blog__item__link anim-slide-top font-bold">Подробнее</a>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div> <!-- end .fade-in-slider__item -->
+												
+						
+						<div class="fade-in-slider__arrow fade-in-slider__arrow_left"></div>
+						<div class="fade-in-slider__arrow fade-in-slider__arrow_right"></div>
+					</div> <!-- end .fade-in-slider -->
+				</div>
+				<div class="index-section__next"></div>
+			</section> <!-- end .index-section.blog -->
+			
+			<section class="index-section contacts">
+				<div class="main__center">
+					<h2 class="index-section__title animationRun" data-animation-class="slideDown">Контакты</h2>
+					
+					<div class="contacts__left animation-block" data-animation-class="slideRight" data-animation-timestart="300">
+						<div class="contacts__title font-bold animation">Мы ждем вас по адресу</div>
+						<div class="animation">105064, Россия,<br/>
+							г. Москва, метро Курская,<br/>
+							Нижний Сусальный пер., д.5, стр. 17</div>
+						<div class="contacts__title font-bold animation">Вы можете связаться с нами:</div>
+						<div class="animation">
+							Телефон: +7 (495) 966-3446<br/>
+							Email: <a href="mailto:info@crossfitarmasmc.ru" title="" class="link">info@crossfitarmasmc.ru</a>
+						</div>
+						<div class="contacts__title contacts__title_margin font-bold animation">У вас остались вопросы?</div>
+						
+						<a href="#" title="Напишите нам" class="contacts__contact-us-link anim-slide-top font-bold animation">Напишите нам</a>
+						<a href="#" title="Запись на персональную тренировку" class="contacts__personal-link anim-slide-top font-bold animation">Запись на персональную тренировку</a>
+					</div>
+					<div class="contacts__right">
+						<img src="images/contacts-map.png" class="contacts__map animationRun" data-animation-class="opacity" alt=""/>
+						<div class="contacts__photo animation-block" data-animation-class="slideLeft" data-animation-timestart="800">
+							<div class="contacts__photo__item animation"></div>
+							<div class="contacts__photo__item animation"></div>
+							<div class="contacts__photo__item animation"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					
+					<div class="clear"></div>
+				</div>
+			</section> <!-- end .index-section.contacts -->
+			
+			<section class="index-section more-info">
+				<div class="main__center">
+					<h2 class="index-section__title index-section__title_white animationRun" data-animation-class="slideDown">А так же для вас</h2>
+					
+					<ul class="advantages animation-block" data-animation-class="fadeIn" data-animation-timestart="0">
+						<li class="advantages__item animation">
+							<div class="advantages__title"><span class="advantages__title__inner">Расположение</span></div>
+							<div class="advantages__icon"><img src="images/advantages-location.png" alt=""/></div>
+							<div class="advantages__desc">2 минуты от метро<br/>Курская, 600 м. от<br/>Cадового кольца</div>
+						</li>
+						<li class="advantages__item animation">
+							<div class="advantages__title"><span class="advantages__title__inner">Парковка</span></div>
+							<div class="advantages__icon"><img src="images/advantages-parking.png" alt=""/></div>
+							<div class="advantages__desc">Организованная<br/>обширная парковка</div>
+						</li>
+						<li class="advantages__item animation">
+							<div class="advantages__title"><span class="advantages__title__inner">Инвентарь</span></div>
+							<div class="advantages__icon"><img src="images/advantages-inventory.png" alt=""/></div>
+							<div class="advantages__desc">Новое<br/>специализированное<br/>оборудование от</div>
+							<div class="advantages__img"><img src="images/fitness-logo.png" alt=""/></div>
+						</li>
+						<li class="advantages__item animation">
+							<div class="advantages__title"><span class="advantages__title__inner">Атмосфера</span></div>
+							<div class="advantages__icon"><img src="images/advantages-ambiance.png" alt=""/></div>
+							<div class="advantages__desc">Драйв Энергетика<br/>Взаимоуважение<br/>Лучше один раз увидеть</div>
+						</li>
+						<li class="advantages__item animation">
+							<div class="advantages__title"><span class="advantages__title__inner">Комфортные<br/>условия</span></div>
+							<div class="advantages__icon"><img src="images/advantages-condition.png" alt=""/></div>
+							<div class="advantages__desc">Чистые мягкие полотенца<br/>Бесплатный Wi-Fi<br/>Фитобар<br/>Приветливый персонал<br/>Качественная музыка<br/>Красивые люди</div>
+						</li>
+						<li class="clear"></li>
+					</ul> <!-- end .advantages -->
+					
+					<a href="#" title="Присоединиться" class="more-info__link anim-slide-top font-bold">Присоединиться</a>
+				</div>
+			</section> <!-- end .index-section.more-info -->
+			
+			<footer class="footer">
+				<div class="main__center">
+					<div class="footer__inner">
+					
+						<div class="instagram-text">
+							<span class="instagram-text__inner">INSTAGRAM<br/>наш хэштэг #*****</span>
+						</div>
+						<div class="footer__logo"><a href="#" title=""><img src="images/footer-logo.png" alt=""/></a></div>
+						<div class="footer__phone"><a href="#" title="">8 495 363 41 72</a></div>
+						<div class="clear"></div>
+						
+						<div class="footer__line"></div>
+						
+						<div class="instagram-photo">
+							<div class="instagram-text_hidden">
+								<span class="instagram-text__inner">INSTAGRAM наш хэштэг #*****</span>
+							</div>
+							<img src="images/temp/pic_6.jpg" class="instagram-photo__item" alt=""/>
+							<img src="images/temp/pic_6.jpg" class="instagram-photo__item" alt=""/>
+							<img src="images/temp/pic_6.jpg" class="instagram-photo__item" alt=""/>
+							<img src="images/temp/pic_6.jpg" class="instagram-photo__item" alt=""/>
+						</div>
+						
+						<div class="footer__social">
+							<a href="#" title="" class="footer__social__item footer__social__item_fb"></a>
+							<a href="#" title="" class="footer__social__item footer__social__item_tw"></a>
+							<a href="#" title="" class="footer__social__item footer__social__item_youtube"></a>
+							<a href="#" title="" class="footer__social__item footer__social__item_v"></a>
+							<a href="#" title="" class="footer__social__item footer__social__item_inst"></a>
+							
+							<div class="clear"></div>
+							<a href="#" title="" class="dev-3core-logo"><img src="images/3core-logo.png" alt=""/></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</footer> <!-- end .footer -->
+			
+		</div> <!-- end .main__inner -->
+	</div> <!-- end .main -->
+</body>
+</html>

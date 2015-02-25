@@ -1,0 +1,622 @@
+/* WIDTH */
+
+@media screen and (max-width: 979px) {
+	/* SCHEDULE */
+		.schedule-table {
+			margin:24px 0 0 0;
+		}
+		
+		.schedule-table td:first-child {
+			padding-left:0;
+			border-top:1px solid #b6b6b6;
+		}
+		
+		.schedule-table tr:first-child td:first-child {
+			border-top:0;
+		}
+		
+		.hor-list_training-type, .hor-list_teachers {
+			display:none;
+		}
+		
+		.schedule-table__icon {
+			display:inline;
+		}
+		
+		.schedule-table__text, .schedule-table__cell-bg {
+			display:none;
+		}
+	/* --END-- SCHEDULE */
+	
+	/* SERVICES */
+		.services-calc__item,
+		.services-calc__advice,
+		.services-calc__personal-link,
+		.services-calc__buttons br {
+			display:none;
+		}
+		
+		.services-special {
+			margin-top:49px;
+		}
+		
+		.services-special__item {
+			float:none;
+			margin:8px auto 0;
+		}
+		
+		.services-special__item:first-child {
+			margin-left:auto;
+			margin-top:0;
+		}
+	/* --END-- SERVICES */
+	
+	/* COLORBOX */
+		#colorbox.carousel-3d-colorbox {
+			left:0 !important;
+		}
+	/* --END-- COLORBOX */
+}
+
+@media screen and (max-width: 759px) {
+	.main__center {
+		max-width:980px;
+		margin:0 auto;
+		padding:0 12px;
+	}
+	
+	.footer .main__center {
+		padding:0;
+	}
+	
+	/* HEADER */
+		.header__fixed .main__center {
+			padding-left:21px;
+			padding-right:21px;
+		}
+	
+		.header__fixed .header__number {
+			display:block;
+			margin-top:14px;
+		}
+		
+		.header__bottom {
+			top:70px;
+		}
+		
+		.header__bottom .header__number {
+			display:none
+		}
+		
+		.callback-button {
+			margin-right:100px;
+		}
+	/* --END-- HEADER */
+	
+	/* TOP MENU */
+		.top-menu {
+			display:none
+		}
+		
+		.top-menu-icon {
+			display:block;
+		}
+		
+		.top-menu_hidden .top-menu {
+			display:block;
+		}
+	/* --END-- TOP MENU */
+	
+	/* MAIN SLIDER */
+		.main-slider {
+			padding:0;
+		}
+		
+		.main-slider__arrow_left {
+			background-position:0 0;
+			left:12px;
+		}
+		
+		.main-slider__arrow_right {
+			background-position:-19px 0;
+			right:12px;
+		}
+		
+		.main-slider__nav {
+			right:12px;
+		}
+	/* --END-- MAIN SLIDER */
+	
+	/* CONTACTS */
+		.contacts__left {
+			float:none;
+			margin:0 auto;
+		}
+		
+		.contacts__right {
+			display:none;
+		}
+	/* --END-- CONTACTS */
+}
+
+@media screen and (max-width: 570px) { 
+	/* ADVANTAGES */
+		.advantages {
+			padding-left:44px;
+			padding-right:44px;
+			margin-top:66px;
+		}
+		
+		.advantages__desc {
+			display:none;
+		}
+	/* --END-- ADVANTAGES */
+		
+	/* FIGHTING STARS */
+		.fighting-stars__main {
+			margin-left:19px;
+		}
+		
+		.index-section.fighting-stars {
+			min-height:1000px;
+			background-size:auto 100%;
+		}
+		
+		.stars-list {
+			max-height:100%;
+			margin-top:5px;
+			margin-left:19px;
+			overflow:visible;
+		}
+		
+		.stars-list__item {
+			margin-bottom:20px;
+		}
+		
+		.stars-list__desc {
+			display:none;
+		}
+	/* --END-- FIGHTING STARS */
+	
+	/* TEACHERS */
+		.teachers__right {
+			width:202px;
+			margin-right:39px;
+		}
+		
+		.teachers__photo {
+			left:8%;
+		}
+		
+		.teachers__schedule__list {
+			width:356px;
+			margin-right:0;
+			float:right;
+		}
+	/* --END-- TEACHERS */
+	
+	/* REVIEWS */
+		.reviews__left {	
+			margin:106px 0 0 0;
+		}
+		
+		.reviews__name {
+			font-size:36px;
+		}
+	/* --END-- REVIEWS */
+	
+	/* BLOG */
+		.blog__left {	
+			width:100%;
+			float:none;
+			margin:84px 0 0 0;
+			text-align:center;
+		}
+		
+		.blog__photo {
+			width:38%;
+		}
+		
+		.blog__right {
+			width:100%;
+			float:right;
+			position:relative;
+			text-align:center;
+		}
+		
+		.blog__item__title {
+			margin:16px 0 10px;
+		}
+		
+		.blog__item__text {
+			display:none
+		}
+		
+		.blog__item__text_small {
+			display:block;
+		}
+		
+		.blog__item__link {
+			display:block;
+			position:relative;
+			left:auto;
+			margin:20px auto 0;
+		}
+	/* --END-- BLOG */
+	
+	/* POPUP TRAINER */
+		.popup-trainer__image {
+			display:none;
+		}
+		
+		.popup-trainer__right {
+			margin-left:20%;
+		}
+	/* --END-- POPUP TRAINER */
+}
+
+
+@media screen and (max-width: 479px) {
+	/* HEADER */
+		.header__fixed .header__number {
+			margin-top:20px;
+			font-size:20px;
+		}
+		
+		.top-menu-icon {
+			margin-left:20px;
+		}
+	/* --END-- HEADER */
+	
+	/* MAIN SLIDER */
+		.main-slider__item__inner {
+			padding:124px 44px 0 68px;
+		}
+		
+		.main-slider__left {
+			float:left;
+			margin:60px 0 0;
+		}
+		
+		.main-slider__right {
+			font-size:42px;
+		}
+		
+		.main-slider__text__big-font {
+			font-size:53px;
+		}
+		
+		/* ADVANTAGES */
+			.advantages {
+				padding-left:2px;
+				padding-right:2px;
+				margin-top:66px;
+			}
+			
+			.advantages__desc {
+				display:none;
+			}
+		/* --END-- ADVANTAGES */
+	/* --END-- MAIN SLIDER */
+	
+	/* SCHEDULE */
+		.schedule-table td {
+			position:static;
+		}
+		/* SCHEDULE TABLE INFO */
+			.schedule-table__info {
+				width:375px;
+				padding:0 27px;
+				left:3%;
+				margin-top:-2px;
+			}
+			
+			.schedule-table__info__inner {
+				height:84px;
+			}
+			
+			.schedule-table__info__inner:before {
+				width:27px;
+				height:90px;
+				background:url("../images/schedule-info-bg-small.png") 0 -91px no-repeat;
+			}
+			
+			.schedule-table__info__inner:after {
+				width:27px;
+				height:90px;
+				background:url("../images/schedule-info-bg-small.png") left top no-repeat;
+			}
+			
+			.schedule-table__info__about, 
+			.schedule-table__info__weight,
+			.schedule-table__info__photo {
+				display:none;
+			}
+			
+			.schedule-table__info__small-photo,
+			.schedule-table__info__type,
+			.schedule-table__info__close {
+				display:block;
+			}
+			
+			.schedule-table__info__text-block {
+				padding:10px 0;
+			}
+			
+			.schedule-table__info__title {
+				margin-bottom:8px;
+			}
+			
+			.schedule-table__info__link-border {
+				width:80%;
+				margin:0 auto;
+			}
+		/* --END-- SCHEDULE TABLE INFO */
+	/* --END-- SCHEDULE */
+	
+	/* TEACHERS */
+		.teachers__title {
+			margin-bottom:52px;
+		}
+		
+		.teachers__age {
+			display:none;
+		}
+	/* --END-- TEACHERS */
+	
+	/* MORE INFO */
+		.more-info .advantages {
+			margin-top:48px;
+		}
+		
+		.more-info__link {
+			margin-top:50px;
+		}
+	/* --END-- MORE INFO */
+	
+	/* FOOTER */
+		.footer__inner {
+			padding-left:62px;
+			padding-right:62px;
+		}
+		
+		.instagram-text {
+			display:none;
+		}
+		
+		.instagram-photo {
+			width:100%;
+			float:none;
+			margin:0 0 16px;
+		}
+		
+		.footer__social {
+			width:100%;
+			height:auto;
+			float:none;
+		}
+		
+		.dev-3core-logo {
+			position:static;
+		}
+		
+		.footer__social__item {
+			display:none;
+		}
+		
+		.instagram-text_hidden {
+			display:block;
+		}
+	/* --END-- FOOTER */
+	
+	/* BLOG */
+		.blog-hidden-list__item {
+			font-size:15px;
+		}
+		
+		.blog-hidden-list__item p {
+			padding-left:12px;
+			padding-right:12px;
+		}
+	/* --END-- BLOG */
+}
+
+@media screen and (max-width: 369px) {
+	/* HEADER */
+		.header__fixed .header__number {
+			margin-top:25px;
+			font-size:14px;
+		}
+		
+		.top-menu-icon {
+			margin-left:10px;
+		}
+		
+		.callback-button {
+			margin-right:50px;
+		}
+	/* --END-- HEADER */
+	
+	/* MAIN SLIDER */
+		.main-slider__left {
+			margin:40px 0 0;
+		}
+		
+		.main-slider__right {
+			font-size:26px;
+		}
+		
+		.main-slider__text__big-font {
+			font-size:37px;
+			padding-left:36px;
+		}
+	/* --END-- MAIN SLIDER */
+	
+	/* ADVANTAGES */
+		.advantages {
+			height:105px;
+			overflow:hidden;
+			padding-bottom:0;
+			text-align:center;
+		}
+		
+		.advantages__item {
+			display:none;
+		}
+		
+		.advantages__item:nth-child(1),
+		.advantages__item:nth-child(2),
+		.advantages__item:nth-child(4) {
+			float:none;
+			display:inline-block;
+			margin-bottom:20px;
+		}
+	/* --END-- ADVANTAGES */
+	
+	/* FIGHTING STARS */
+		.fighting-stars__main {
+			width:100px;
+			margin-left:19px;
+		}
+		
+		.fighting-stars__main__name {
+			font-size:24px;
+			left:120px;
+			top:5px;
+		}
+		
+		.fighting-stars__main__status {
+			font-size:16px;
+		}
+		
+		.stars-list__photo {
+			max-width:80%;
+		}
+		
+		.stars-list {
+			margin-left:8px;
+		}
+	/* --END-- FIGHTING STARS */
+	
+	/* SCHEDULE */
+		/* SCHEDULE TABLE INFO */
+			.schedule-table__info {
+				width:226px;
+				left:3%;
+				margin-top:-2px;
+			}
+			
+			.schedule-table__info__inner {
+				height:84px;
+			}
+			
+			.schedule-table__info__small-photo {
+				display:none;
+			}
+			
+			.schedule-table__info__text-block {
+				float:none;
+				margin:0;
+			}
+			
+			.schedule-table__info__title {
+				padding:0;
+			}
+			
+			.schedule-table__info__link-border {
+				margin-left:0;
+			}
+		/* --END-- SCHEDULE TABLE INFO */
+	/* --END-- SCHEDULE */
+	
+	/* TEACHERS */
+		.teachers__right {
+			margin-right:26px;
+		}
+		
+		.teachers__schedule__list {
+			width:100%;
+		}
+		
+		.teachers__schedule__item {
+			min-width:138px;
+		}
+	/* --END-- TEACHERS */
+	
+	/* REVIEWS */
+		.reviews__left {	
+			margin:70px 0 0 0;
+			float:none;
+			text-align:center;
+			width:100%;
+		}
+		
+		.reviews__photo {
+			width:50%;
+		}
+		
+		.reviews__right {
+			width:100%;
+			float:none;
+			margin:10px 0 0 0;
+			text-align:center;
+		}
+		
+		.reviews__name {
+			font-size:20px;
+		}
+	/* --END-- REVIEWS */
+	
+	/* BLOG */
+		.blog__item__link {
+			width:90%;
+		}
+	/* --END-- BLOG */
+	
+	/* MORE INFO */
+		.more-info .advantages {
+			margin-top:4px;
+		}
+		
+		.more-info__link {
+			margin-top:10px;
+		}
+	/* --END-- MORE INFO */
+	
+	/* FOOTER */
+		.footer__inner {
+			padding-left:12px;
+			padding-right:12px;
+		}
+		
+		.instagram-photo__item {
+			width:23%;
+		}
+	/* --END-- FOOTER */
+	
+	/* 3D CAROUSEL */
+		.carousel-3d__item {
+			max-width:70%;
+		}
+	/* --END-- 3D CAROUSEL */
+	
+	/* POPUP */
+		.popup__close {
+			right:0;
+			top:-32px;
+		}
+	/* --END-- POPUP */
+}
+
+@media screen and (max-width: 320px) {
+	/* SERVICES */
+		.services-special__item {
+			width:297px;
+			height:136px;
+		}
+		
+		.services-calc__ask-price {
+			width:297px;
+		}
+	/* --END-- SERVICES */
+}
