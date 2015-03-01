@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/other-size.css" />
 
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.colorbox-min.js"></script>
     <script src="js/jquery.waterwheelCarousel.js"></script>
 	
@@ -47,6 +48,15 @@
 				
 				<div class="popup-content">
 					<form action="">
+						<select name="type" id="selectTrainingList" placeholder="Тип тренировки">
+							<option value="">Тип тренировки</option>
+							<option value="">Персональные тренировки</option>
+							<option value="">Кроссфит</option>
+							<option value="">СФП, TRX</option>
+							<option value="">Powerlifting</option>
+							<option value="">Йога</option>
+							<option value="">Единоборства</option>
+						</select>
 						<input type="text" placeholder="Имя" class="input-text"/>
 						<input type="text" placeholder="Номер телефона" class="input-text"/>
 						<div class="line-text"><span class="line-text__text">или</span></div>
@@ -92,11 +102,19 @@
 					<div class="top-menu font-italic animation-block" data-animation-class="slideDown">
 						<div class="top-menu__item-bg"></div>
 						<ul class="top-menu-list">
-							<li class="top-menu__item active animation"><span class="top-menu__highlight"><a href="#" title="Услуги и цены" class="link">Услуги и цены</a></span></li>
-							<li class="top-menu__item animation"><a href="#" title="Расписание" class="link">Расписание</a></li>
-							<li class="top-menu__item animation"><a href="#" title="FAQ" class="link">FAQ</a></li>
-							<li class="top-menu__item animation"><a href="#" title="Блог" class="link">Блог</a></li>
-							<li class="top-menu__item animation"><a href="#" title="Контакты" class="link">Контакты</a></li>
+							<li class="top-menu__item active animation">
+								<span class="top-menu__highlight"><a href="#" title="Услуги и цены" class="link">Услуги и цены</a></span>
+								<ul class="sub-menu">
+									<li class="sub-menu__item active"><a href="#" class="link" title="Карты">Карты</a></li>
+									<li class="sub-menu__item"><a href="#" class="link" title="Магазин">Магазин</a></li>
+									<li class="sub-menu__item"><a href="#" class="link" title="Аренда зала">Аренда зала</a></li>
+									<li class="sub-menu__item"><a href="#" class="link" title="Корпоративным клиентам">Корпоративным клиентам</a></li>
+								</ul>
+							</li>
+							<li class="top-menu__item animation"><span class="top-menu__highlight"><a href="#" title="Расписание" class="link">Расписание</a></span></li>
+							<li class="top-menu__item animation"><span class="top-menu__highlight"><a href="#" title="FAQ" class="link">FAQ</a></span></li>
+							<li class="top-menu__item animation"><span class="top-menu__highlight"><a href="#" title="Блог" class="link">Блог</a></span></li>
+							<li class="top-menu__item animation"><span class="top-menu__highlight"><a href="#" title="Контакты" class="link">Контакты</a></span></li>
 							<li class="clear"></li>
 						</ul> 
 					</div> <!-- end .top-menu -->
@@ -116,114 +134,142 @@
 			</div> <!-- end .header__bottom -->
 		
 			<section class="index-section main-slider">
-				<div class="main-slider__image" style="background-image:url('images/main-slider/pic_1.jpg'); display:block;">
-					<div class="main__center">
-						<div class="main-slider__text">
+				<div class="main-slider__image" style="background-image:url('images/main-slider/pic_1.jpg'); display:block;"></div>
+				<div class="main-slider__image" style="background-image:url('images/main-slider/pic_2.jpg');"></div>
+				
+				<div class="main__center">
+					<div class="main-slider__item">
+						<div class="main-slider__text" style="display:block">
 							<div class="main-slider__text__white font-bold">Запишись на Кроссфит.</div>
 							<div class="main-slider__text__orange font-bold">Воспитай Силу. Характер. Выносливость</div>
 							
+							<div class="main-slider__text__bottom">
+								<p>Кроссфит призван к любой жизненной ситуации, требующей активных физических действий.
+								<br/>За счет масштабируемости нагрузок Кроссфит дает возможность людям любого уровня физической подготовки, возраста, физиологических особенностей.</p>
+								<p>За счет масштабируемости нагрузок Кроссфит дает возможность людям любого уровня физической подготовки, возраста, физиологических особенностей.</p>
+							</div>
+							<a href="#" class="services-calc__ask-price anim-slide-top font-bold" title="Записаться на тренировку">Записаться на тренировку</a>
 						</div>
-					</div>
-				</div>
-				<div class="main-slider__image" style="background-image:url('images/main-slider/pic_2.jpg');">
-					<div class="main__center">
+						
 						<div class="main-slider__text">
 							<div class="main-slider__text__white font-bold">Запишись на Powerlifting.</div>
 							<div class="main-slider__text__orange font-bold">Жми больше. Присядай чаще. Тяни легче.</div>
 							
 						</div>
-					</div>
-				</div>
-				
-				<div class="main__center">
-					<div class="main-slider__item">
+					
 						<div class="main-slider__arrow main-slider__arrow_left"></div>
 						<div class="main-slider__arrow main-slider__arrow_right"></div>
 						
 						<div class="main-slider__nav"></div> <!-- end .main-slider__nav -->
-						
-						
 					</div> <!-- end .main-slider__item -->
-						
-					
-					
 				</div>
 				<div class="index-section__next"></div>
 			</section> <!-- end .index-section.main-slider -->
 			
-			<section class="index-section fighting-stars">
+			<section class="index-section training-type">
 				<div class="main__center">
-					<h2 class="index-section__title index-section__title_white animationRun" data-animation-class="slideDown">У НАС ТРЕНИРУЮТСЯ ЗВЕЗДЫ<br/>КИКБОКСИНГА И МУАЙ-ТАЙ</h2>
-					<div class="fighting-stars__main">
-						<img class="animationRun" src="images/fighting-stars/pic_1.png" alt="" data-animation-class="fadeIn" />
-						<div class="fighting-stars__main__name font-ibold animation-block" data-animation-class="slideLeft" data-animation-timestart="800">
-							<span class="fighting-stars__main__firstname animation">Руслан</span><br/>
-							<span class="fighting-stars__main__lastname animation">Кривуша</span>
-							<div class="fighting-stars__main__status font-reg animation">Тренер Чемпионов.</div>
-						</div>
-					</div> <!-- end .fighting-stars__main -->
+					<h2 class="index-section__title index-section__title_white animationRun" data-animation-class="slideDown">Типы тренировок</h2>
 					
-					<ul class="stars-list animation-block" data-animation-class="fadeIn">
-						<li class="stars-list__item">
-							<img class="stars-list__photo animation" src="images/fighting-stars/pic_2.png" alt=""/>
-							<div class="stars-list__name animationRun" data-animation-class="rotate3DFadeIn" data-animation-timestart="800"><span class="font-bold">Сергей Харитонов</span><br/>Возраст 34 года.</div>
-							<div class="stars-list__desc animationRun" data-animation-class="fadeIn" data-animation-timestart="1000">
-								3х-кратный чемпион России по рукопашному бою, чемпион России по кикбоксингу, 2-кратный чемпион Мира по универсальному бою, чемпион Евразии по боевому самбо, неоднократный чемпион турниров по панкратиону, бронзовый призер PRIDE GP 2004 в тяжелом весе, полуфиналист Strikeforce 2011 в тяжелом весе, чемпион Мира по кикбоксингу W5 2014 в тяжелом весе.
-							</div>
+					<div class="training-type__logo"><img src="images/training-type-logo.png" alt=""/></div>
+					
+					<!-- left -->
+					<a href="#" title="Powerlifting" class="training-type__item training-type__item_left-bottom" data-training-type="powerlifting">
+						<img src="images/temp/pic_16.jpg" alt=""/>
+						<span class="training-type__item__name font-italic"><span class="align">Powerlifting</span></span>
+						<span class="training-type__item__border"></span>
+					</a>
+					
+					<a href="#" title="СФП, TRX" class="training-type__item training-type__item_left-top">
+						<img src="images/temp/pic_17.jpg" alt=""/>
+						<span class="training-type__item__name font-italic"><span class="align">СФП, TRX</span></span>
+						<span class="training-type__item__border"></span>
+					</a>
+					
+					<!-- top -->
+					<a href="#" title="Кроссфит" class="training-type__item training-type__item_top-left">
+						<img src="images/temp/pic_18.jpg" alt=""/>
+						<span class="training-type__item__name font-italic"><span class="align">Кроссфит</span></span>
+						<span class="training-type__item__border"></span>
+					</a>
+					
+					<a href="#" title="Персональные тренировки" class="training-type__item training-type__item_top-right">
+						<img src="images/temp/pic_19.jpg" alt=""/>
+						<span class="training-type__item__name font-italic"><span class="align">Персональные тренировки</span></span>
+						<span class="training-type__item__border"></span>
+					</a>
+					
+					<!-- right -->
+					<a href="#" title="Йога" class="training-type__item training-type__item_right-top">
+						<img src="images/temp/pic_20.jpg" alt=""/>
+						<span class="training-type__item__name font-italic"><span class="align">Йога</span></span>
+						<span class="training-type__item__border"></span>
+					</a>
+					
+					<a href="#" title="Единоборства" class="training-type__item training-type__item_right-bottom" data-training-type="martial_arts">
+						<img src="images/temp/pic_21.jpg" alt=""/>
+						<span class="training-type__item__name font-italic"><span class="align">Единоборства</span></span>
+						<span class="training-type__item__border"></span>
+					</a>
+					
+					<ul class="advantages animation-block" data-animation-class="fadeIn">
+						<li class="advantages__item animation">
+							<div class="advantages__title"><span class="advantages__title__inner">Аренда Зала</span></div>
+							<div class="advantages__icon"><img src="images/icon-rental.png" alt=""/></div>
 						</li>
-						<li class="stars-list__item">
-							<img class="stars-list__photo animation" src="images/fighting-stars/pic_2.png" alt=""/>
-							<div class="stars-list__name animationRun" data-animation-class="rotate3DFadeIn" data-animation-timestart="800"><span class="font-bold">Джабар Аскеров</span><br/>Возраст 28 лет.</div>
-							<div class="stars-list__desc animationRun" data-animation-class="fadeIn" data-animation-timestart="1000">
-								Весовая категория 70 кг. Чемпион Европы по Тайскому боксу WMC, чемпион Европы по Кикбоксингу IAKSA, чемпион Европы по Кикбоксингу W5, 2х-кратный Чемпион Мира по правилам TNA.
-							</div>
+						<li class="advantages__item animation">
+							<div class="advantages__title"><span class="advantages__title__inner">Корпаративные<br/>продажи</span></div>
+							<div class="advantages__icon"><img src="images/icon-corp-sales.png" alt=""/></div>
 						</li>
-						<li class="stars-list__item">
-							<img class="stars-list__photo animation" src="images/fighting-stars/pic_2.png" alt=""/>
-							<div class="stars-list__name animationRun" data-animation-class="rotate3DFadeIn" data-animation-timestart="800"><span class="font-bold">Ярослав Ремыга</span><br/>Возраст 21 лет.</div>
-							<div class="stars-list__desc animationRun" data-animation-class="fadeIn" data-animation-timestart="1000">
-								МСМК по Тайскому боксу. Весовая категория 86 кг. 2х-кратный Чемпион Мира по Тайскому боксу IFMA Чемпион Европы по Тайскому боксу IFMA. 5ти-кратный Чемпион Украины по Тайскому 
-							</div>
-						</li>
-						<li class="stars-list__item">
-							<img class="stars-list__photo animation" src="images/fighting-stars/pic_2.png" alt=""/>
-							<div class="stars-list__name animationRun" data-animation-class="rotate3DFadeIn" data-animation-timestart="800"><span class="font-bold">Алим Набиев</span><br/>Возраст 19 лет.</div>
-							<div class="stars-list__desc animationRun" data-animation-class="fadeIn" data-animation-timestart="1000">
-								МС по Кикбоксингу. Весовая категория 70 кг. Чемпион Мира по Кикбоксингу WPKA. Чемпион Мира по Тайскому боксу IFMA. Чемпион Европы по Кикбоксингу ISKA. Чемпион Мира по Кикбоксингу W5.
-							</div>
-						</li>
-						<li class="stars-list__item">
-							<img class="stars-list__photo animation" src="images/fighting-stars/pic_2.png" alt=""/>
-							<div class="stars-list__name animationRun" data-animation-class="rotate3DFadeIn" data-animation-timestart="800"><span class="font-bold">Турал Байрамов</span><br/>Возраст 28 лет.</div>
-							<div class="stars-list__desc animationRun" data-animation-class="fadeIn" data-animation-timestart="1000">
-								Весовая категория 72 кг. Чемпион мира по Кикбоксингу WPKA. Чемпион мира по Кикбоксингу KOK. Многократный Чемпион Азербайджана по Кикбоксингу.
-							</div>
-						</li>
-						<li class="stars-list__item">
-							<img class="stars-list__photo animation" src="images/fighting-stars/pic_2.png" alt=""/>
-							<div class="stars-list__name animationRun" data-animation-class="rotate3DFadeIn" data-animation-timestart="800"><span class="font-bold">Александр Новиков</span><br/>Возраст 21 год.</div>
-							<div class="stars-list__desc animationRun" data-animation-class="fadeIn" data-animation-timestart="1000">
-								КМС по Боксу, КМС по Тайскому боксу. Весовая категория 81 кг. Стаж занятий 5 лет. Призер чемпионата Европы по Кикбоксингу. Чемпион ЦФО по Тайскому боксу. Чемпион Москвы по Тайскому боксу.
-							</div>
-						</li>
-						<li class="stars-list__item">
-							<img class="stars-list__photo animation" src="images/fighting-stars/pic_2.png" alt=""/>
-							<div class="stars-list__name animationRun" data-animation-class="rotate3DFadeIn" data-animation-timestart="800"><span class="font-bold">Даулет Отарбаев </span><br/>Возраст 29 лет.</div>
-							<div class="stars-list__desc animationRun" data-animation-class="fadeIn" data-animation-timestart="1000">
-								МС по Тайскому боксу. Обладатель кубка Короля Тайланда, победитель "Diamond Fight - Дружба" 2014, участник К-1 World Max.
-							</div>
+						<li class="advantages__item animation">
+							<div class="advantages__title"><span class="advantages__title__inner">Магазин</span></div>
+							<div class="advantages__icon"><img src="images/icon-shop.png" alt=""/></div>
 						</li>
 						<li class="clear"></li>
-					</ul> <!-- end .stars-list -->
+					</ul> <!-- end .advantages -->
 					
+					<div class="fade-in-slider fade-in-slider_trainings">
 					
-					<div class="fighting-stars__register">
-						<a class="fighting-stars__register__link anim-fill-orange animationRun" href="javascript:void(0)" title="" data-animation-class="rotate3DFadeIn" data-animation-timestart="1200"><b>Записаться на тренировку</b></a>
-					</div>
-					<div class="index-section__next"></div>
+						<div class="fade-in-slider__item" style="display:block; background-image:url(images/temp/pic_22.png)" data-training-type="powerlifting">
+							<div class="text">
+								<div class="title font-bold">Powerlifting</div>
+								<div class="title-bottom font-bold">Спорт сильных</div>
+								<div class="desc">Пауэрлифтинг также называют силовым троеборьем. Связано это с тем,
+что в качестве соревновательных дисциплин в него входят три упражнения: приседания со штангой на спине (точнее на верхней части лопаток), жим штанги лежа на горизонтальной скамье и тяга штанги — которые в сумме и определяют квалификацию спортсмена.</div>
+
+								<a href="javascript:void(0)" title="Узнать подробнее" class="more-info__link anim-slide-top font-bold">Узнать подробнее</a>
+								
+								<div class="fade-in-slider_trainings-trainers">
+									<h2 class="index-section__title">Тренеры</h2>
+									<div class="item font-bold">Ярослав Ремыга</div>
+									<div class="item font-bold">Ярослав Ремыга</div>
+									<div class="item font-bold">Ярослав Ремыга</div>
+									<br/>
+									<a class="fade-in-slider_trainings__link anim-fill-orange show-popup font-bold" href="javascript:void(0)" title="Записаться на тренировку" data-popup-id="orderCall">Записаться на тренировку</a>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div> <!-- end .fade-in-slider__item -->
+						
+						<div class="fade-in-slider__item" style="background-image:url(images/temp/pic_22.png)" data-training-type="martial_arts">
+							<div class="text">
+								<div class="title font-bold">Единоборства</div>
+								<div class="title-bottom font-bold">Спорт быстрых</div>
+							</div>
+							<div class="clear"></div>
+						</div> <!-- end .fade-in-slider__item -->
+						
+						<div class="fade-in-slider__arrow fade-in-slider__arrow_left"></div>
+						<div class="fade-in-slider__arrow fade-in-slider__arrow_right"></div>
+						
+						<div class="fade-in-slider_trainings-close"></div>
+					</div>	<!-- end .fade-in-slider -->
+
 				</div>
-			</section> <!-- end .index-section.fighting-stars -->
-		
+				
+				<div class="training-type__fill"></div>
+				<div class="index-section__next"></div>
+			</section> <!-- end .index-section.training-type -->
+			
 			<section class="index-section schedule">
 				<div class="main__center">
 					<h2 class="index-section__title animationRun" data-animation-class="slideDown">Расписание тренировок</h2>
@@ -234,79 +280,43 @@
 								<div class="hor-list__text font-ibold"><div class="hor-list__cell">Вид тренировок</div></div>
 							</div>
 						</li>
-						<li class="hor-list__item hor-list__item_width_2 animation">
+						<li class="hor-list__item animation">
 							<div class="hor-list__bg">
-								<div class="hor-list__text"><div class="hor-list__cell">Бокс</div></div>
+								<div class="hor-list__text"><div class="hor-list__cell">Кроссфит</div></div>
 							</div>
 						</li>
-						<li class="hor-list__item hor-list__item_width_4 animation">
+						<li class="hor-list__item animation">
 							<div class="hor-list__bg">
-								<div class="hor-list__text"><div class="hor-list__cell">Muay Thai</div></div>
+								<div class="hor-list__text"><div class="hor-list__cell">Powerlifting</div></div>
 							</div>
 						</li>
-						<li class="hor-list__item hor-list__item_width_4 animation">
+						<li class="hor-list__item animation">
 							<div class="hor-list__bg">
-								<div class="hor-list__text"><div class="hor-list__cell">Кикбоксинг</div></div>
+								<div class="hor-list__text"><div class="hor-list__cell">СФП, TRX</div></div>
 							</div>
 						</li>
-						<li class="hor-list__item hor-list__item_active hor-list__item_width_4 animation">
+						<li class="hor-list__item animation">
 							<div class="hor-list__bg">
-								<div class="hor-list__text"><div class="hor-list__cell">Джиу Джитсу</div></div>
+								<div class="hor-list__text"><div class="hor-list__cell">Йога</div></div>
 							</div>
 						</li>
-						<li class="hor-list__item hor-list__item_last hor-list__item_width_5 animation">
+						<li class="hor-list__item hor-list__item_active hor-list__item_last animation">
 							<div class="hor-list__bg">
-								<div class="hor-list__text"><div class="hor-list__cell">Смешанные Единоборства</div></div>
-							</div>
-						</li>
-						<li class="clear"></li>
-					</ul> <!-- end .hor-list -->
-					
-					<ul class="hor-list hor-list_teachers font-italic animation-block" data-animation-class="slideDown" data-animation-timestart="500">
-						<li class="hor-list__item hor-list__item_noactive hor-list__item_width_1 animation">
-							<div class="hor-list__bg">
-								<div class="hor-list__text font-ibold"><div class="hor-list__cell">Тренер</div></div>
-							</div>
-						</li>
-						<li class="hor-list__item hor-list__item_width_3 animation">
-							<div class="hor-list__bg">
-								<div class="hor-list__text"><div class="hor-list__cell">Сергей<br/>Харитонов</div></div>
-							</div>
-						</li>
-						<li class="hor-list__item hor-list__item_active hor-list__item_width_3 animation">
-							<div class="hor-list__bg">
-								<div class="hor-list__text"><div class="hor-list__cell">Ярослав<br/>Ремыга</div></div>
-							</div>
-						</li>
-						<li class="hor-list__item hor-list__item_width_3 animation">
-							<div class="hor-list__bg">
-								<div class="hor-list__text"><div class="hor-list__cell">Джабар<br/>Аскеров</div></div>
-							</div>
-						</li>
-						<li class="hor-list__item hor-list__item_width_3 animation">
-							<div class="hor-list__bg">
-								<div class="hor-list__text"><div class="hor-list__cell">Алим<br/>Набиев</div></div>
-							</div>
-						</li>
-						<li class="hor-list__item hor-list__item_width_3 animation">
-							<div class="hor-list__bg">
-								<div class="hor-list__text"><div class="hor-list__cell">Турал<br/>Байрамов</div></div>
-							</div>
-						</li>
-						<li class="hor-list__item hor-list__item_width_3 animation">
-							<div class="hor-list__bg">
-								<div class="hor-list__text"><div class="hor-list__cell">Александр<br/>Новиков</div></div>
-							</div>
-						</li>
-						<li class="hor-list__item hor-list__item_last hor-list__item_width_3 animation">
-							<div class="hor-list__bg">
-								<div class="hor-list__text"><div class="hor-list__cell">Даулет<br/>Отарбаев</div></div>
+								<div class="hor-list__text"><div class="hor-list__cell">Единоборства</div></div>
 							</div>
 						</li>
 						<li class="clear"></li>
 					</ul> <!-- end .hor-list -->
 					
 					<div class="schedule-table font-italic">
+						<div class="fightzone-info">
+							<div class="fightzone-info__inner">
+								<div class="fightzone-info__padding">
+									<img src="images/temp/pic_23.jpg" alt=""/>
+									<a href="#" class="orange-btn anim-slide-top font-reg" title="Подробнее о занятиях единоборствами можно узнать здесь">Подробнее о занятиях единоборствами<br/>можно узнать здесь</a>
+								</div>
+							</div>
+						</div>
 						<table>
 							<thead>
 								<tr>
@@ -355,33 +365,7 @@
 									<td></td>
 									<td></td>
 									<td></td>
-									<td>
-										<div class="schedule-table__item">
-											<div class="schedule-table__cell-bg"><div class="schedule-table__cell-bg__inner"></div></div>
-											<span class="schedule-table__text">Джиу Джитсу</span>
-											<img src="images/schedule-item-icon.png" alt="" class="schedule-table__icon"/>
-											
-											<div class="schedule-table__info">
-												<div class="schedule-table__info__inner">
-													<div class="schedule-table__info__photo"><img src="images/temp/pic_1.png" alt=""/></div>
-													<div class="schedule-table__info__small-photo"><img src="images/temp/pic_1_small.png" alt=""/></div>
-													<div class="schedule-table__info__text-block">
-														<div class="schedule-table__info__title font-ibold">Ярослав Ремыга<span class="schedule-table__info__type font-italic">Джиу Джитсу</span></div>
-														<div class="schedule-table__info__about">
-															МСМК по Тайскому боксу.
-															2х-кратный Чемпион Мира по
-															Тайскому боксу IFMA
-														</div>
-														<div class="schedule-table__info__weight">Весовая категория 86 кг.<br/><a href="#" title="Узнать больше" class="link">Узнать больше</a></div>
-														<div class="schedule-table__info__link-border anim-slide-top font-ibold"><a href="#" title="" class="link">Записаться на тренировку</a></div>
-													</div>
-													<div class="clear"></div>
-												</div>
-												
-												<div class="schedule-table__info__close"></div>
-											</div> <!-- end .schedule-table__info -->
-										</div>
-									</td>
+									<td></td>
 								</tr>
 								<tr>
 									<td class="font-reg">10:30</td>
@@ -567,6 +551,12 @@
 							</tbody>
 						</table>
 					</div> <!-- end .schedule-table -->
+					
+					<center>
+						<p>Любая тренировка эффективнее с Персональным тренером</p>
+						
+						<a class="order-link anim-fill-orange animationRun show-popup rotate3DFadeIn" href="javascript:void(0)" title="Записаться на персональную тренировку" data-animation-class="rotate3DFadeIn" data-animation-timestart="1200" data-popup-id="orderCall"><b>Записаться на персональную тренировку</b></a>
+					</center>
 				</div>
 				
 				<div class="index-section__next"></div>
@@ -716,250 +706,6 @@
 				<div class="index-section__next"></div>
 			</section> <!-- end .index-section.teachers -->
 			
-			<section class="index-section services">
-				<div class="main__center">
-					<h2 class="index-section__title animationRun" data-animation-class="slideDown">Услуги и цены</h2>
-					
-					<div class="services-calc">
-						<div class="services-calc__title">Подбери оптимальную программу</div>
-						
-						<div class="services-calc__item">
-							<ul class="hor-list font-italic animation-block" data-animation-class="slideDown">
-								<li class="hor-list__item hor-list__item_noactive hor-list__item_num hor-list__item_num_active animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text font-ibold"><div class="hor-list__cell">1</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_noactive hor-list__item_width_1 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text font-ibold"><div class="hor-list__cell">Вид Единоборств</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_2 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Бокс</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_4 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Muay Thai</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_4 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Кикбоксинг</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_4 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Джиу Джитсу</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_last hor-list__item_width_5 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Смешанные Единоборства</div></div>
-									</div>
-								</li>
-								<li class="clear"></li>
-							</ul> <!-- end .hor-list -->
-						</div> <!-- end .services-calc__item -->
-						
-						<div class="services-calc__item services-calc__item_noactive">
-							<ul class="hor-list font-italic animation-block" data-animation-class="slideDown">
-								<li class="hor-list__item hor-list__item_noactive hor-list__item_num animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text font-ibold"><div class="hor-list__cell">2</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_noactive hor-list__item_width_1 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text font-ibold"><div class="hor-list__cell">Желаемый Эффект</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_2 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Бокс</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_4 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Muay Thai</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_4 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Кикбоксинг</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_4 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Джиу Джитсу</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_last hor-list__item_width_5 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Смешанные Единоборства</div></div>
-									</div>
-								</li>
-								<li class="clear"></li>
-							</ul> <!-- end .hor-list -->
-						</div> <!-- end .services-calc__item -->
-						
-						<div class="services-calc__item services-calc__item_noactive">
-							<ul class="hor-list font-italic animation-block" data-animation-class="slideDown">
-								<li class="hor-list__item hor-list__item_noactive hor-list__item_num animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text font-ibold"><div class="hor-list__cell">3</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_noactive hor-list__item_width_1 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text font-ibold"><div class="hor-list__cell">Формат Тренировки</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_2 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Бокс</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_4 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Muay Thai</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_4 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Кикбоксинг</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_4 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Джиу Джитсу</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_last hor-list__item_width_5 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Смешанные Единоборства</div></div>
-									</div>
-								</li>
-								<li class="clear"></li>
-							</ul> <!-- end .hor-list -->
-						</div> <!-- end .services-calc__item -->
-						
-						<div class="services-calc__item services-calc__item_noactive">
-							<ul class="hor-list font-italic animation-block" data-animation-class="slideDown">
-								<li class="hor-list__item hor-list__item_noactive hor-list__item_num animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text font-ibold"><div class="hor-list__cell">4</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_noactive hor-list__item_width_1 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text font-ibold"><div class="hor-list__cell">Тренер</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_2 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Бокс</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_4 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Muay Thai</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_4 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Кикбоксинг</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_4 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Джиу Джитсу</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_last hor-list__item_width_5 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Смешанные Единоборства</div></div>
-									</div>
-								</li>
-								<li class="clear"></li>
-							</ul> <!-- end .hor-list -->
-						</div> <!-- end .services-calc__item -->
-						
-						<div class="services-calc__item services-calc__item_noactive">
-							<ul class="hor-list font-italic animation-block" data-animation-class="slideDown">
-								<li class="hor-list__item hor-list__item_noactive hor-list__item_num animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text font-ibold"><div class="hor-list__cell">5</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_noactive hor-list__item_width_1 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text font-ibold"><div class="hor-list__cell">Срок карты</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_2 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Бокс</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_4 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Muay Thai</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_4 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Кикбоксинг</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_width_4 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Джиу Джитсу</div></div>
-									</div>
-								</li>
-								<li class="hor-list__item hor-list__item_last hor-list__item_width_5 animation">
-									<div class="hor-list__bg">
-										<div class="hor-list__text"><div class="hor-list__cell">Смешанные Единоборства</div></div>
-									</div>
-								</li>
-								<li class="clear"></li>
-							</ul> <!-- end .hor-list -->
-						</div> <!-- end .services-calc__item -->
-						
-						<div class="services-calc__buttons">
-							<a href="#" class="services-calc__ask-price anim-slide-top font-bold" title="Запросить стоимость">Запросить стоимость</a>
-							<br/>
-							<span class="services-calc__advice">Чтобы добиться лучших результатов мы советуем вам</span>
-							<br/>
-							<a href="#" class="services-calc__personal-link anim-slide-top font-bold" title="Записаться на персональную тренировку">Записаться на персональную тренировку</a>
-						</div> <!-- end .services-calc__buttons -->
-					</div> <!-- end .services-calc -->
-					
-					<div class="services-special animation-block" data-animation-class="slideLeft">
-						<a class="services-special__item animation" href="#" title="Спец предложение">
-							<img src="images/temp/pic_3.jpg" alt="" class="services-special__photo"/>
-							<span class="services-special__text"><span class="services-special__text__align">Спец предложение</span></span>
-						</a> <!-- end .services-special__item -->
-						
-						<a class="services-special__item animation" href="#" title="Спец предложение">
-							<img src="images/temp/pic_3.jpg" alt="" class="services-special__photo"/>
-							<span class="services-special__text"><span class="services-special__text__align">Спец предложение</span></span>
-						</a> <!-- end .services-special__item -->
-						
-						<a class="services-special__item animation" href="#" title="Спец предложение">
-							<img src="images/temp/pic_3.jpg" alt="" class="services-special__photo"/>
-							<span class="services-special__text"><span class="services-special__text__align">Спец предложение</span></span>
-						</a> <!-- end .services-special__item -->
-						<div class="clear"></div>
-					</div> <!-- end .services-special -->
-					
-				</div>
-				
-				<div class="index-section__next"></div>
-			</section> <!-- end .index-section.services -->
-			
 			<section class="index-section photo-video">
 				<div class="main__center">
 					<h2 class="index-section__title index-section__title_white animationRun" data-animation-class="slideDown">Фото и видео</h2>
@@ -1013,7 +759,7 @@
 			
 			<section class="index-section reviews">
 				<div class="main__center">
-					<h2 class="index-section__title index-section__title_white animationRun" data-animation-class="slideDown">Отзывы</h2>
+					<h2 class="index-section__title animationRun" data-animation-class="slideDown">Отзывы</h2>
 					<div class="fade-in-slider fade-in-slider_reviews">
 						
 						<div class="fade-in-slider__item" style="display:block">
@@ -1044,97 +790,6 @@
 					</div> <!-- end .fade-in-slider -->
 				</div>
 			</section> <!-- end .index-section.reviews -->
-			
-			<section class="index-section blog">
-				<div class="main__center">
-					<h2 class="index-section__title animationRun" data-animation-class="slideDown">Блог</h2>
-					
-					<div class="blog-hidden-list">
-						<div id="blogItem_1" class="blog-hidden-list__item">
-							<div class="blog-hidden-list__inner">
-								<h3 class="title font-bold">Открылся новый зал</h3>
-								<img src="images/temp/pic_12.jpg" alt=""/>
-								<p>Россфит призван к любой жизненной ситуации, требующей активных физических
-								действий. За счет масштабируемости нагрузок Кроссфит дает возможность людям
-								любого уровня физической подготовки, возраста, физиологических особенностей
-								достичь отличных результатов в зависимости от поставленных целей – улучшить
-								функциональную подготовленность, силовые показатели,</p>
-								<p>Россфит призван к любой жизненной ситуации, требующей активных физических
-								действий. За счет масштабируемости нагрузок Кроссфит дает возможность людям
-								любого уровня физической подготовки, возраста, физиологических особенностей
-								достичь отличных результатов в зависимости от поставленных целей – улучшить
-								функциональную подготовленность, силовые показатели,</p>
-							</div>
-						</div>
-						
-						<div id="blogItem_2" class="blog-hidden-list__item">
-							<div class="blog-hidden-list__inner">
-								<h3 class="title font-bold">Как я стал чемпионом мира</h3>
-								<p>Россфит призван к любой жизненной ситуации, требующей активных физических
-								действий. За счет масштабируемости нагрузок Кроссфит дает возможность людям
-								любого уровня физической подготовки, возраста, физиологических особенностей
-								достичь отличных результатов в зависимости от поставленных целей – улучшить
-								функциональную подготовленность, силовые показатели,</p>
-								<img src="images/temp/pic_12.jpg" alt=""/>
-								
-								<p>Россфит призван к любой жизненной ситуации, требующей активных физических
-								действий. За счет масштабируемости нагрузок Кроссфит дает возможность людям
-								любого уровня физической подготовки, возраста, физиологических особенностей
-								достичь отличных результатов в зависимости от поставленных целей – улучшить
-								функциональную подготовленность, силовые показатели,</p>
-								<img src="images/temp/pic_12.jpg" alt=""/>
-							</div>
-						</div>
-					</div> <!-- end .blog-hidden-list -->
-					
-					<div class="fade-in-slider fade-in-slider_blog">
-						
-						<div class="fade-in-slider__item" style="display:block">
-							<div class="blog__item">
-								<div class="blog__left animationRun" data-animation-class="opacity"><img class="blog__photo" src="images/temp/pic_5.jpg" alt=""/></div>
-								<div class="blog__right animation-block" data-animation-class="slideLeft">
-									<h3 class="blog__item__title font-ibold animation">Открылся новый зал</h3>
-									<div class="blog__item__text font-italic animation">
-										Россфит призван к любой жизненной ситуации,
-										требующей активных физических действий.
-										За счет масштабируемости нагрузок Кроссфит дает
-										возможность людям любого уровня физической
-										подготовки, возраста, физиологических особенностей.
-									</div>
-									<div class="blog__item__text_small font-italic animation">
-										Россфит призван к любой жизненной ситуации,
-										требующей активных физических действий.
-									</div>
-									<a href="#blogItem_1" rel="blog" title="Подробнее" class="blog__item__link anim-slide-top font-bold animation">Подробнее</a>
-								</div>
-								<div class="clear"></div>
-							</div>
-						</div> <!-- end .fade-in-slider__item -->
-						
-						<div class="fade-in-slider__item">
-							<div class="blog__item">
-								<div class="blog__left"><img class="blog__photo" src="images/temp/pic_5.jpg" alt=""/></div>
-								<div class="blog__right">
-									<h3 class="blog__item__title font-ibold">Как я стал чемпионом мира</h3>
-									<div class="blog__item__text font-italic">
-										Текст текст текст
-									</div>
-									<div class="blog__item__text_small font-italic">
-										Текст текст текст
-									</div>
-									<a href="#blogItem_2" rel="blog" title="Подробнее" class="blog__item__link anim-slide-top font-bold">Подробнее</a>
-								</div>
-								<div class="clear"></div>
-							</div>
-						</div> <!-- end .fade-in-slider__item -->
-												
-						
-						<div class="fade-in-slider__arrow fade-in-slider__arrow_left"></div>
-						<div class="fade-in-slider__arrow fade-in-slider__arrow_right"></div>
-					</div> <!-- end .fade-in-slider -->
-				</div>
-				<div class="index-section__next"></div>
-			</section> <!-- end .index-section.blog -->
 			
 			<section class="index-section contacts">
 				<div class="main__center">
@@ -1168,44 +823,6 @@
 					<div class="clear"></div>
 				</div>
 			</section> <!-- end .index-section.contacts -->
-			
-			<section class="index-section more-info">
-				<div class="main__center">
-					<h2 class="index-section__title index-section__title_white animationRun" data-animation-class="slideDown">А так же для вас</h2>
-					
-					<ul class="advantages animation-block" data-animation-class="fadeIn" data-animation-timestart="0">
-						<li class="advantages__item animation">
-							<div class="advantages__title"><span class="advantages__title__inner">Расположение</span></div>
-							<div class="advantages__icon"><img src="images/advantages-location.png" alt=""/></div>
-							<div class="advantages__desc">2 минуты от метро<br/>Курская, 600 м. от<br/>Cадового кольца</div>
-						</li>
-						<li class="advantages__item animation">
-							<div class="advantages__title"><span class="advantages__title__inner">Парковка</span></div>
-							<div class="advantages__icon"><img src="images/advantages-parking.png" alt=""/></div>
-							<div class="advantages__desc">Организованная<br/>обширная парковка</div>
-						</li>
-						<li class="advantages__item animation">
-							<div class="advantages__title"><span class="advantages__title__inner">Инвентарь</span></div>
-							<div class="advantages__icon"><img src="images/advantages-inventory.png" alt=""/></div>
-							<div class="advantages__desc">Новое<br/>специализированное<br/>оборудование от</div>
-							<div class="advantages__img"><img src="images/fitness-logo.png" alt=""/></div>
-						</li>
-						<li class="advantages__item animation">
-							<div class="advantages__title"><span class="advantages__title__inner">Атмосфера</span></div>
-							<div class="advantages__icon"><img src="images/advantages-ambiance.png" alt=""/></div>
-							<div class="advantages__desc">Драйв Энергетика<br/>Взаимоуважение<br/>Лучше один раз увидеть</div>
-						</li>
-						<li class="advantages__item animation">
-							<div class="advantages__title"><span class="advantages__title__inner">Комфортные<br/>условия</span></div>
-							<div class="advantages__icon"><img src="images/advantages-condition.png" alt=""/></div>
-							<div class="advantages__desc">Чистые мягкие полотенца<br/>Бесплатный Wi-Fi<br/>Фитобар<br/>Приветливый персонал<br/>Качественная музыка<br/>Красивые люди</div>
-						</li>
-						<li class="clear"></li>
-					</ul> <!-- end .advantages -->
-					
-					<a href="#" title="Присоединиться" class="more-info__link anim-slide-top font-bold">Присоединиться</a>
-				</div>
-			</section> <!-- end .index-section.more-info -->
 			
 			<footer class="footer">
 				<div class="main__center">

@@ -41,8 +41,13 @@ $(function(){
 		// смена изображений и переключние пагинации
 		var index = imageBlock.index(),
 			indexNext = imageBlockNext.index(),
+			textBlock = $(".main-slider__text").eq(index),
+			textBlockNext = $(".main-slider__text").eq(indexNext),
 			nav = $(".main-slider__nav__item").eq(index),
 			navNext = $(".main-slider__nav__item").eq(indexNext);
+		
+		textBlock.fadeOut();
+		textBlockNext.fadeIn();
 		
 		imageBlock.fadeOut();
 		imageBlockNext.fadeIn();
@@ -256,6 +261,24 @@ $(function(){
 		}
 	});
 	/* --END-- PHOTO-VIDEO */
+	
+	/* TRAINING TYPE */
+	var animTime = 300;
+	$(".fade-in-slider_trainings-close").click(function(){
+		$(this).closest(".fade-in-slider").fadeOut(animTime);
+		$(".training-type__fill").fadeOut(animTime);
+	});
+	
+	$(".training-type__item").click(function(){
+		var type = $(this).data("training-type");
+		
+		$(".training-type__fill, .fade-in-slider_trainings").fadeIn(animTime);
+		$(".fade-in-slider_trainings .fade-in-slider__item").hide();
+		$(".fade-in-slider__item[data-training-type=" + type + "]").show();
+		
+		return false;
+	});
+	/* --END-- TRAINING TYPE */
 });
 
 $(window).resize(function(){

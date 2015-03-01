@@ -134,6 +134,13 @@ $(function(){
 			$("html, body").scrollTop(0);
 		}
 	});
+	
+		/* SUB MENU */
+			$(".top-menu__item").hover(function(){
+				var width = $(this).width() + 28;
+				$(this).find(".sub-menu").width(width);
+			});
+		/* --END-- SUB MENU */
 	/* --END-- TOP MENU */
 	
 	/*$(".index-section").each(function(){
@@ -184,6 +191,22 @@ $(function(){
 			hidePopup($(this).closest(".popup"));
 		});
 	/* --END-- POPUP */
+	
+	var maxWidth = 980;
+	$(".hor-list").each(function(){
+		var itemSize = $(this).find(".hor-list__item").size(),
+			itemWidth = maxWidth/itemSize - 16;
+		
+		if ($(this).find(".hor-list__item").first().is(".hor-list__item_num")) {
+			itemSize--;
+			itemWidth = maxWidth/itemSize - 19;
+		}
+			
+		$(this).find(".hor-list__item:not(.hor-list__item_num)").width(itemWidth);
+	});
+	
+	//showPopup($('#orderCall'));
+	$( "#selectTrainingList" ).selectmenu();
 });
 
 

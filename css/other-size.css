@@ -1,6 +1,16 @@
 /* WIDTH */
 
 @media screen and (max-width: 979px) {
+	.main__center {
+		max-width:980px;
+		margin:0 auto;
+		padding:0 12px;
+	}
+	
+	.footer .main__center {
+		padding:0;
+	}
+	
 	/* SCHEDULE */
 		.schedule-table {
 			margin:24px 0 0 0;
@@ -49,6 +59,10 @@
 			margin-left:auto;
 			margin-top:0;
 		}
+		
+		.services-special_products .services-special__item {
+			margin:0 0 35px 7px;
+		}
 	/* --END-- SERVICES */
 	
 	/* COLORBOX */
@@ -59,15 +73,6 @@
 }
 
 @media screen and (max-width: 759px) {
-	.main__center {
-		max-width:980px;
-		margin:0 auto;
-		padding:0 12px;
-	}
-	
-	.footer .main__center {
-		padding:0;
-	}
 	
 	/* HEADER */
 		.header__fixed .main__center {
@@ -80,16 +85,17 @@
 			margin-top:14px;
 		}
 		
-		.header__bottom {
-			top:70px;
-		}
-		
 		.header__bottom .header__number {
 			display:none
 		}
 		
 		.callback-button {
 			margin-right:100px;
+		}
+		
+		.header__fixed__3d,
+		.header__fixed__sep {
+			display:none;
 		}
 	/* --END-- HEADER */
 	
@@ -125,6 +131,14 @@
 		.main-slider__nav {
 			right:12px;
 		}
+		
+		.main-slider__text__white {
+			font-size:20px;
+		}
+		
+		.main-slider__text__orange {
+			font-size:32px;
+		}
 	/* --END-- MAIN SLIDER */
 	
 	/* CONTACTS */
@@ -137,6 +151,27 @@
 			display:none;
 		}
 	/* --END-- CONTACTS */
+	
+	/* TRAINING TYPE SLIDER */
+		.fade-in-slider_trainings-close {
+			top:20px;
+			right:20px;
+		}
+		
+		.fade-in-slider_trainings .text {
+			margin-left:24%;
+		}
+		
+		.fade-in-slider_trainings-trainers {
+			left:0;
+		}
+	/* --END-- TRAINING TYPE SLIDER */
+	
+	/* SCHEDULE */
+		.fightzone-info {
+			/* left:10%; */
+		}
+	/* --END-- SCHEDULE */
 }
 
 @media screen and (max-width: 570px) { 
@@ -253,6 +288,16 @@
 			margin-left:20%;
 		}
 	/* --END-- POPUP TRAINER */
+	
+	/* TRAINING TYPE SLIDER */
+		.fade-in-slider_trainings .text {
+			margin-left:14%;
+		}
+		
+		.fade-in-slider_trainings .title {
+			font-size:50px;
+		}
+	/* --END-- TRAINING TYPE SLIDER */
 }
 
 
@@ -284,6 +329,16 @@
 		
 		.main-slider__text__big-font {
 			font-size:53px;
+		}
+		
+		.main-slider__text {
+			top:250px;
+		}
+		
+		.main-slider__text__bottom {
+			max-width:220px;
+			font-size:15px;
+			margin-top:50px;
 		}
 		
 		/* ADVANTAGES */
@@ -419,6 +474,13 @@
 			padding-right:12px;
 		}
 	/* --END-- BLOG */
+	
+	/* TRAINING TYPE SLIDER */
+		.fade-in-slider_trainings .text {
+			width:60%;
+			margin-left:20%;
+		}
+	/* --END-- TRAINING TYPE SLIDER */
 }
 
 @media screen and (max-width: 369px) {
@@ -606,9 +668,51 @@
 			top:-32px;
 		}
 	/* --END-- POPUP */
+	
+	/* TRAINING TYPE SLIDER */
+		.fade-in-slider_trainings .more-info__link {
+			width:100%;
+			margin-left:0;
+		}
+		
+		.fade-in-slider_trainings .title {
+			font-size:30px;
+			margin-bottom:20px;
+		}
+		
+		.fade-in-slider_trainings .desc {
+			margin-top:20px;
+		}
+	/* --END-- TRAINING TYPE SLIDER */
+	
+	/* RENTAL INFO */
+		.fade-in-slider_rental-info {
+			width:217px;
+			height:129px;
+		}
+		
+		.fade-in-slider_rental-info .fade-in-slider__item {
+			width:211px;
+			height:126px;
+		}
+	/* --END-- RENTAL INFO */
 }
 
 @media screen and (max-width: 320px) {
+	/* HEADER */
+		.header-logo {
+			width:50%;
+		}
+	/* --END-- HEADER */
+	
+	/* INNER SECTION */
+		.inner-section {
+			position:relative;
+			padding:150px 0 50px;
+			background-position:center 150px;
+		}
+	/* --END-- INNER SECTION */
+	
 	/* SERVICES */
 		.services-special__item {
 			width:297px;
@@ -619,4 +723,19 @@
 			width:297px;
 		}
 	/* --END-- SERVICES */
+	
+	/* RENTAL INFO */
+		.fade-in-slider_rental-info {
+			margin-left:40px;
+			margin-right:40px;
+		}
+		
+		.fade-in-slider_rental-info .fade-in-slider__arrow_left {
+			left:-40px;
+		}
+		
+		.fade-in-slider_rental-info .fade-in-slider__arrow_right {
+			right:-40px;
+		}
+	/* --END-- RENTAL INFO */
 }

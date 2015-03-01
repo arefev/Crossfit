@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0">
+    <title>Crossfit</title>
+	
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/animations.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/colorbox.css" />
+	<link rel="stylesheet" href="css/other-size.css" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+    <script src="js/jquery.waterwheelCarousel.js"></script>
+	
+	<!--[if IE]><script src="js/placeholder.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+		<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<script src="js/placeholder.js"></script>
+	<![endif]-->
+	
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	
+	<div class="main">
+		<div class="window-fill" id="windowFill"></div>
+	
+		<div class="popup popup_order-call" id="orderCall">
+			<div class="popup-in">
+				<div class="popup__close"></div>
+				
+				<div class="popup-trainer">
+					<div class="popup-trainer__image"><img src="images/temp/pic_15.png" alt=""/></div>
+					<div class="popup-trainer__right">
+						<div class="popup-trainer__name font-ibold">Ярослав <span class="popup-trainer__name_orange">Ремыга</span></div>
+						<div class="popup-trainer__text font-italic">"Ты в одном шаге от нового себя"</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				<div class="popup-content">
+					<form action="">
+						<input type="text" placeholder="Имя" class="input-text"/>
+						<input type="text" placeholder="Номер телефона" class="input-text"/>
+						<div class="line-text"><span class="line-text__text">или</span></div>
+						<input type="text" placeholder="Электронная почта" class="input-text"/>
+						<label class="check-agreement"><input type="checkbox" />Я согласен с <a href="#" title="Пользовательское соглашение">Пользовательским соглашением</a></label>
+						<input type="submit" class="btn-submit-orange font-bold anim-slide-top"/>
+					</form>
+				</div>
+			</div>
+		</div> <!-- end b-popup -->
+		
+		<div class="popup popup_result" id="result">
+			<div class="popup-in">
+				<div class="popup__close"></div>
+				
+				<div class="popup-content">
+					<div class="popup__title">Ваша заявка отправлена!</div>
+					<center>Мы обязательно свяжемся с Вами<br/>
+						в ближайшее время<br/>
+						по указанным контактам</center>
+				</div>
+			</div>
+		</div> <!-- end b-popup -->
+		
+		<div class="top-menu_hidden">
+			<div class="top-menu__close"></div>
+		</div>
+		
+		<div class="main__inner">
+			<header class="header__fixed">
+				
+				<div class="main__center">
+					<div class="header-logo slideDown">
+						<a href="#" title="Главная"><img src="images/header-logo.png" alt="" class="header-logo__item"/></a>
+					</div>
+					
+					<div class="top-menu-icon"></div>
+					<div class="header__number"><a href="#" title="">8 495 363 41 72</a></div>
+					
+					<a href="#" title="" class="header__fixed__3d font-italic">3D тур<br/>по Залу</a>
+					<div class="header__fixed__sep"></div>
+					
+					<div class="top-menu font-italic animation-block" data-animation-class="slideDown">
+						<div class="top-menu__item-bg"></div>
+						<ul class="top-menu-list">
+							<li class="top-menu__item active animation"><span class="top-menu__highlight"><a href="#" title="Услуги и цены" class="link">Услуги и цены</a></span></li>
+							<li class="top-menu__item animation"><a href="#" title="Расписание" class="link">Расписание</a></li>
+							<li class="top-menu__item animation"><a href="#" title="FAQ" class="link">FAQ</a></li>
+							<li class="top-menu__item animation"><a href="#" title="Блог" class="link">Блог</a></li>
+							<li class="top-menu__item animation"><a href="#" title="Контакты" class="link">Контакты</a></li>
+							<li class="clear"></li>
+						</ul> 
+					</div> <!-- end .top-menu -->
+					
+					
+					
+					<div class="clear"></div>
+				</div>
+			</header> <!-- end .header__fixed -->
+			
+			<div class="header__bottom">
+				<div class="main__center">
+					
+					<div class="callback-button anim-slide-top" onclick="showPopup($('#orderCall'))"><span class="callback-button__border">Обратный звонок</span></div>
+					<div class="header__number"><a href="#" title="">8 495 363 41 72</a></div>
+					
+					<div class="breadcrumbs"><a href="#" title="Главная">Главная</a> > <a href="#" title="Услуги и цены">Услуги и цены</a> > Аренда зала</div>
+					<div class="clear"></div>
+				</div>
+			</div> <!-- end .header__bottom -->
+		
+			<section class="inner-section rental">
+				<div class="main__center">
+					<h1 class="inner-section__title">Аренда зала</h1>
+					
+					<img src="images/temp/pic_27.jpg" alt=""/>
+					
+					<h3>У нас Самый замечательный зал в мире</h3>
+					
+					<p>Россфит призван к любой жизненной ситуации, требующей активных физических действий.<br/>
+					За счет масштабируемости нагрузок Кроссфит дает возможность людям любого уровня физической подготовки, возраста, физиологических особенностей.</p>
+				</div>
+			</section> <!-- end .inner-section.rental -->
+			
+			<section class="inner-section rental-info">
+				<div class="main__center">
+					<div class="fade-in-slider fade-in-slider_rental-info">
+					
+						<div class="fade-in-slider__item" style="display:block">
+							<a href="#" title=""><img src="images/temp/pic_28.jpg" alt=""/></a>
+						</div> <!-- end .fade-in-slider__item -->
+						
+						<div class="fade-in-slider__item">
+							<a href="#" title=""><img src="images/temp/pic_29.jpg" alt=""/></a>
+						</div> <!-- end .fade-in-slider__item -->
+						
+						<div class="fade-in-slider__arrow fade-in-slider__arrow_left"></div>
+						<div class="fade-in-slider__arrow fade-in-slider__arrow_right"></div>
+					</div> <!-- end .fade-in-slider -->
+					
+					<div class="rental-info__right">
+						<div class="rental-info__title font-bold">Условия аренды</div>
+						<ul class="list-orange">
+							<li><span>100% оплата</span></li>
+							<li><span>Только наличный расчет</span></li>
+							<li><span>Порча инвентаря карается анально.</span></li>
+						</ul>
+					</div>
+					
+					<div class="clear"></div>
+					
+					<center>
+						<p>По вопросам Аренды Зала звоните или закажите</p>
+						<a class="order-link anim-fill-orange animationRun show-popup rotate3DFadeIn" href="javascript:void(0)" title="Обратный звонок" data-animation-class="rotate3DFadeIn" data-animation-timestart="1200" data-popup-id="orderCall"><b>Обратный звонок</b></a>
+					</center>
+				</div>
+			</section> <!-- end .inner-section.rental-info -->
+			
+			<footer class="footer">
+				<div class="main__center">
+					<div class="footer__inner">
+					
+						<div class="instagram-text">
+							<span class="instagram-text__inner">INSTAGRAM<br/>наш хэштэг #*****</span>
+						</div>
+						<div class="footer__logo"><a href="#" title=""><img src="images/footer-logo.png" alt=""/></a></div>
+						<div class="footer__phone"><a href="#" title="">8 495 363 41 72</a></div>
+						<div class="clear"></div>
+						
+						<div class="footer__line"></div>
+						
+						<div class="instagram-photo">
+							<div class="instagram-text_hidden">
+								<span class="instagram-text__inner">INSTAGRAM наш хэштэг #*****</span>
+							</div>
+							<img src="images/temp/pic_6.jpg" class="instagram-photo__item" alt=""/>
+							<img src="images/temp/pic_6.jpg" class="instagram-photo__item" alt=""/>
+							<img src="images/temp/pic_6.jpg" class="instagram-photo__item" alt=""/>
+							<img src="images/temp/pic_6.jpg" class="instagram-photo__item" alt=""/>
+						</div>
+						
+						<div class="footer__social">
+							<a href="#" title="" class="footer__social__item footer__social__item_fb"></a>
+							<a href="#" title="" class="footer__social__item footer__social__item_tw"></a>
+							<a href="#" title="" class="footer__social__item footer__social__item_youtube"></a>
+							<a href="#" title="" class="footer__social__item footer__social__item_v"></a>
+							<a href="#" title="" class="footer__social__item footer__social__item_inst"></a>
+							
+							<div class="clear"></div>
+							<a href="#" title="" class="dev-3core-logo"><img src="images/3core-logo.png" alt=""/></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</footer> <!-- end .footer -->
+			
+		</div> <!-- end .main__inner -->
+	</div> <!-- end .main -->
+</body>
+</html>
