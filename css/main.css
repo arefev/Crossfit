@@ -821,6 +821,10 @@ body {
 		padding:127px 0 50px;
 	}
 	
+	.inner-section_bg-gray {
+		background-color:#f7f7f7;
+	}
+	
 	.inner-section__title {
 		margin:0;
 		font-size:24px;
@@ -828,6 +832,7 @@ body {
 		color:#313131;
 		text-align:center;
 		padding:42px 0 0;
+		margin-bottom:42px;
 	}
 	
 	.inner-section__title_white {
@@ -2645,7 +2650,8 @@ body {
 
 /* RENTAL */
 	.rental {
-		background:#101010;
+		background:url("../images/black-bg.jpg") center top no-repeat;
+		background-size:100% 100%;
 		color:#FFF;
 		font-size:18px;
 	}
@@ -2732,3 +2738,113 @@ body {
 		}
 	/* --END-- RENTAL INFO */
 /* --END-- RENTAL */
+
+/* OPENING BLOCKS */
+	.opening-blocks {
+		margin:0 0 0 -26px;
+		text-align:center;
+	}
+	
+	.opening-block {
+		width:100%;
+		max-width:307px;
+		min-width:296px;
+		display:inline-block;
+		text-align:center;
+		margin:0 0 68px 26px;
+		position:relative;
+	}
+	
+	.opening-block__name {
+		font-size:18px;
+		margin:30px 0 13px;
+	}
+	
+	.opening-block .order-link {
+		width:100%;
+		max-width:160px;
+	}
+	
+	.opening-block__show-info {
+		margin-top:22px;
+	}
+	
+	.opening-block__arrow {
+		width:116px;
+		height:46px;
+		background:url("../images/opened-block-arrow.png") no-repeat;
+		position:absolute;
+		bottom:-72px;
+		left:50%;
+		margin-left:-58px;
+		display:none;
+		z-index:5;
+	}
+	
+	.opening-block.active .opening-block__show-info {
+		visibility:hidden;
+	}
+	
+	.opening-block.active .opening-block__arrow {
+		display:block;
+	}
+	
+	.opened-block {
+		width:100%;
+		background:url("../images/black-bg.jpg") center top no-repeat;
+		background-size:100% 100%;
+		color:#FFF;
+		font-size:18px;
+		padding:38px 0 26px;
+		display:none;
+		position:absolute;
+		top:0;
+		left:0;
+	}
+	
+	.opened-block h3 {
+		text-align:center;
+		text-transform:none;
+		font-size:18px;
+	}
+	
+	.opened-block a {
+		color:#FFF;
+	}
+	
+	.opened-block .order-link {
+		width:100%;
+		max-width:320px;
+		font-size:15px;
+		-webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+			  box-sizing: border-box;
+	}
+	
+	.opened-block p {
+		margin-top:33px;
+	}
+	
+	.opened-block__links {
+		text-align:center;
+	}
+	
+	.opened-block__links p {
+		margin-top:17px;
+	}
+/* --END-- OPENING BLOCKS */
+
+/* SERVICES */
+	.services-links {
+		text-align:center;
+	}
+	
+	.services-links .services-calc__ask-price {
+		width:100%;
+		max-width:240px;
+		margin:0 6px 12px;
+		-webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+			  box-sizing: border-box;
+	}
+/* --END-- SERVICES */

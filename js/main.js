@@ -192,6 +192,49 @@ $(function(){
 		});
 	/* --END-- POPUP */
 	
+	/* OPENING BLOCKS */
+		$(".opening-block__show-info").click(function(){
+			hideOpenendBlock();
+			
+			var id = $(this).data("opened-block"),
+				openingBlock = $(this).closest(".opening-block"),
+				openingBlockHeight = openingBlock.height(),
+				openingBlockTop = openingBlock.offset().top,
+				marginBottom = parseFloat(openingBlock.css("margin-bottom")),
+				openedBlock = $(".opened-block[data-opened-block=" + id + "]"),
+				openedBlockHeight = openedBlock.height() + 132,
+				openedBlockTop = openingBlockTop + openingBlockHeight + 26;
+				
+			if (!openedBlock.length) return false;
+			
+			var newMarginBottom = 26 + openedBlockHeight;
+			
+			openingBlock
+				.data("margin-bottom", marginBottom)
+				.css("margin-bottom", newMarginBottom)
+				.addClass("active");
+				
+			openedBlock.css("top", openedBlockTop).show();
+		});
+		
+		$(".opened-block__hide-link").click(function(){
+			hideOpenendBlock();
+		});
+		
+		function hideOpenendBlock() {
+			var openingBlock = $(".opening-block.active"),
+				marginBottom = openingBlock.data("margin-bottom"),
+				id = openingBlock.find(".opening-block__show-info").data("opened-block"),
+				openedBlock = $(".opened-block[data-opened-block=" + id + "]");
+				
+			openingBlock
+				.css("margin-bottom", marginBottom)
+				.removeClass("active");
+				
+			openedBlock.hide();
+		}
+	/* --END-- OPENING BLOCKS */
+	
 	var maxWidth = 980;
 	$(".hor-list").each(function(){
 		var itemSize = $(this).find(".hor-list__item").size(),

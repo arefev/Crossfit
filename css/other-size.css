@@ -738,4 +738,14 @@
 			right:-40px;
 		}
 	/* --END-- RENTAL INFO */
+	
+	/* OPENING BLOCKS */
+		.opening-blocks {
+			margin-left:0;
+		}
+		
+		.opening-block {
+			margin-left:0;
+		}
+	/* --END-- OPENING BLOCKS */
 }
