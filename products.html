@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/other-size.css" />
 
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.colorbox-min.js"></script>
     <script src="js/jquery.waterwheelCarousel.js"></script>
 	
@@ -92,17 +93,22 @@
 					<div class="top-menu font-italic animation-block" data-animation-class="slideDown">
 						<div class="top-menu__item-bg"></div>
 						<ul class="top-menu-list">
-							<li class="top-menu__item active animation"><span class="top-menu__highlight"><a href="#" title="Услуги и цены" class="link">Услуги и цены</a></span></li>
-							<li class="top-menu__item animation"><a href="#" title="Расписание" class="link">Расписание</a></li>
-							<li class="top-menu__item animation"><a href="#" title="FAQ" class="link">FAQ</a></li>
-							<li class="top-menu__item animation"><a href="#" title="Блог" class="link">Блог</a></li>
-							<li class="top-menu__item animation"><a href="#" title="Контакты" class="link">Контакты</a></li>
+							<li class="top-menu__item active animation">
+								<span class="top-menu__highlight"><a href="#" title="Услуги и цены" class="link">Услуги и цены</a></span>
+								<ul class="sub-menu">
+									<li class="sub-menu__item active"><a href="#" class="link" title="Карты">Карты</a></li>
+									<li class="sub-menu__item"><a href="#" class="link" title="Магазин">Магазин</a></li>
+									<li class="sub-menu__item"><a href="#" class="link" title="Аренда зала">Аренда зала</a></li>
+									<li class="sub-menu__item"><a href="#" class="link" title="Корпоративным клиентам">Корпоративным клиентам</a></li>
+								</ul>
+							</li>
+							<li class="top-menu__item animation"><span class="top-menu__highlight"><a href="#" title="Расписание" class="link">Расписание</a></span></li>
+							<li class="top-menu__item animation"><span class="top-menu__highlight"><a href="#" title="FAQ" class="link">FAQ</a></span></li>
+							<li class="top-menu__item animation"><span class="top-menu__highlight"><a href="#" title="Блог" class="link">Блог</a></span></li>
+							<li class="top-menu__item animation"><span class="top-menu__highlight"><a href="#" title="Контакты" class="link">Контакты</a></span></li>
 							<li class="clear"></li>
 						</ul> 
 					</div> <!-- end .top-menu -->
-					
-					
-					
 					<div class="clear"></div>
 				</div>
 			</header> <!-- end .header__fixed -->
@@ -157,12 +163,12 @@
 					</ul> <!-- end .hor-list -->
 					
 					<div class="services-special services-special_products animation-block" data-animation-class="slideLeft">
-						<a class="services-special__item animation slideLeft" href="#" title="Спец предложение">
+						<a class="services-special__item animation slideLeft" href="#prDetail_1" rel="product-detail" title="Спец предложение">
 							<img src="images/temp/pic_24.jpg" alt="" class="services-special__photo">
 							<span class="services-special__text"><span class="services-special__text__align">Спец предложение</span></span>
 						</a> <!-- end .services-special__item -->
 						
-						<a class="services-special__item animation slideLeft" href="#" title="Спец предложение">
+						<a class="services-special__item animation slideLeft" href="#prDetail_2" rel="product-detail" title="Спец предложение">
 							<img src="images/temp/pic_25.jpg" alt="" class="services-special__photo">
 							<span class="services-special__text"><span class="services-special__text__align">Спец предложение</span></span>
 						</a> <!-- end .services-special__item -->
@@ -191,6 +197,59 @@
 					</div>
 					
 					<div class="products__link"><a href="#" title="Показать Больше Товаров">Показать Больше Товаров</a></div>
+					
+					
+					<div class="product-detail" id="prDetail_1">
+						<div class="slider-preview">
+							<div class="slider-preview__main">
+								<img src="images/temp/pic_40.jpg" alt="" class="slider-preview__main-item" />
+								<img src="images/temp/pic_41.jpg" alt="" class="slider-preview__main-item" style="display:none" />
+								<img src="images/temp/pic_44.jpg" alt="" class="slider-preview__main-item" style="display:none" />
+							</div>
+							<div class="slider-preview__items">
+								<div class="slider-preview__item active">
+									<img src="images/temp/pic_42.jpg" alt=""/>
+									<div class="slider-preview__item-fill"></div>
+								</div>
+								
+								<div class="slider-preview__item">
+									<img src="images/temp/pic_43.jpg" alt=""/>
+									<div class="slider-preview__item-fill"></div>
+								</div>
+								
+								<div class="slider-preview__item">
+									<img src="images/temp/pic_45.jpg" alt=""/>
+									<div class="slider-preview__item-fill"></div>
+								</div>
+								
+								<div class="clear"></div>
+							</div>
+						</div> <!-- end .slider-preview -->
+						
+						<div class="product-detail-info">
+							<div class="product-detail__title font-bold">BCAA</div>
+							<div class="product-detail__title_bottom font-bold">Amino Kompleks</div>
+							<div class="product-detail__desc">Спортивные аминокислотные комплексы обладают достаточно большой эффективностью, выражающейся в ускорении развития мышц и создании необходимого белкового питания для организма. Однако их проблема заключается в том, что организм не всегда способен переработать большое количество всех аминокислот без ущерба для здоровья.</div>
+							
+							<div class="price"><img src="images/icon-rub.png" alt=""/> <b>490</b></div>
+							
+							<div class="product-detail__button">
+								Оформить покупку по телефону или 
+								<a href="#" class="orange-button anim-slide-top font-bold" title="Заказать Обратный Звонок">Заказать Обратный Звонок</a>
+							</div>
+						</div>
+						
+						<div class="clear"></div>
+					</div>
+					
+					<div class="product-detail" id="prDetail_2">
+						<p>Обычная литература, перенесенная в Сеть, не является "сетературой" в смысле отдельного жанра, однако механизм сочленений существенно отражает конкретный контрапункт. Абстрактное высказывание жизненно начинает анапест. Талант Капниста по-настоящему раскрылся в комедии «Ябеда», здесь верлибр отталкивает мелодический стиль. Нарративная семиотика возможна.</p>
+						<p>В заключении добавлю, реципиент представляет собой хорей. Различное расположение отталкивает анапест. Линеаризация мышления параллельна. Лирический субъект изящно вызывает дактиль.</p>
+						<p>Хорей неравномерен. Возможно, что сходство Гугона и Микулы объясняется родством бродячих мотивов, однако стилистическая игра прекрасно аннигилирует конструктивный поток сознания. Модальность высказывания вызывает конкретный амфибрахий, где автор является полновластным хозяином своих персонажей, а они - его марионетками.</p>
+						<p>Обычная литература, перенесенная в Сеть, не является "сетературой" в смысле отдельного жанра, однако механизм сочленений существенно отражает конкретный контрапункт. Абстрактное высказывание жизненно начинает анапест. Талант Капниста по-настоящему раскрылся в комедии «Ябеда», здесь верлибр отталкивает мелодический стиль. Нарративная семиотика возможна.</p>
+						<p>В заключении добавлю, реципиент представляет собой хорей. Различное расположение отталкивает анапест. Линеаризация мышления параллельна. Лирический субъект изящно вызывает дактиль.</p>
+						<p>Хорей неравномерен. Возможно, что сходство Гугона и Микулы объясняется родством бродячих мотивов, однако стилистическая игра прекрасно аннигилирует конструктивный поток сознания. Модальность высказывания вызывает конкретный амфибрахий, где автор является полновластным хозяином своих персонажей, а они - его марионетками.</p>
+					</div>
 					
 				</div>
 			</section> <!-- end .inner-section.products -->

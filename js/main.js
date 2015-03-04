@@ -250,6 +250,41 @@ $(function(){
 	
 	//showPopup($('#orderCall'));
 	$( "#selectTrainingList" ).selectmenu();
+	
+	// PRODUCTS
+	$(".products .services-special__item").colorbox({
+		inline:true,
+		className: "colorbox-product-detail",
+		innerWidth:"70%", 
+		maxWidth: 920,
+		title:false,
+		current: '',
+		onComplete: function(e){
+			var element = $("#colorbox"),
+				width = element.width(),
+				windowWidth = $(window).width(),
+				left = (windowWidth - width)/2;
+				
+			element.css("left", left)
+		}
+	});
+	
+	/* PREVIEW SLIDER */
+		$("body").on("click", ".slider-preview__item", function(){
+			if ($(this).is(".active"))
+				return false;
+			
+			var slider = $(this).closest(".slider-preview"),
+				index = $(this).index(),
+				mainPhoto = slider.find(".slider-preview__main-item").eq(index);
+			
+			slider.find(".slider-preview__main-item").fadeOut();
+			mainPhoto.fadeIn();
+			
+			slider.find(".slider-preview__item.active").removeClass("active");
+			$(this).addClass("active");
+		});
+	/* --END-- PREVIEW SLIDER */
 });
 
 

@@ -70,6 +70,16 @@
 			left:0 !important;
 		}
 	/* --END-- COLORBOX */
+	
+	/* BLOG */
+		.blog-list {
+			margin-left:0;
+		}
+		
+		.blog-item {
+			margin-left:0;
+		}
+	/* --END-- BLOG */
 }
 
 @media screen and (max-width: 759px) {
@@ -481,6 +491,13 @@
 			margin-left:20%;
 		}
 	/* --END-- TRAINING TYPE SLIDER */
+	
+	/* PRODUCTS */
+		.product-detail {
+			padding-left:32px;
+			padding-right:32px;
+		}
+	/* --END-- PRODUCTS */
 }
 
 @media screen and (max-width: 369px) {
@@ -696,6 +713,27 @@
 			height:126px;
 		}
 	/* --END-- RENTAL INFO */
+	
+	/* PRODUCTS */
+		.product-detail {
+			padding-left:10px;
+			padding-right:10px;
+		}
+		
+		.product-detail .slider-preview {
+			display:none;
+		}
+	/* --END-- PRODUCTS */
+	
+	/* COLORBOX PRODUCT DETAIL */
+		.colorbox-product-detail #cboxContent {
+			padding:0 36px;
+		}
+		
+		.colorbox-product-detail #cboxClose {
+			right:52px;
+		}
+	/* --END-- COLORBOX PRODUCT DETAIL */
 }
 
 @media screen and (max-width: 320px) {

@@ -132,3 +132,21 @@
 	top:-62px;
 	right:36px;
 }	
+
+/* COLORBOX PRODUCT DETAIL */
+	.colorbox-product-detail #cboxContent {
+		padding:0 66px;
+	}
+	
+	.colorbox-product-detail #cboxLoadedContent {
+		background:#FFF;
+	}
+	
+	.colorbox-product-detail #cboxClose {
+		width:12px;
+		height:12px;
+		background:url("../images/popup-close-product.png") no-repeat;
+		top:26px;
+		right:93px;
+	}
+/* --END-- COLORBOX PRODUCT DETAIL */
