@@ -32,6 +32,7 @@ $(function(){
 	runAnimationBlock($(".top-menu"));
 	runAnimationBlock($(".header__bottom"));
 	runAnimationSection($(".main-slider"));
+	runAnimationSection($(".animation-block-run"));
 	
 	// HEADER LOGO
 	$(".header-logo").hover(function(){
@@ -215,6 +216,12 @@ $(function(){
 				.addClass("active");
 				
 			openedBlock.css("top", openedBlockTop).show();
+			
+			return false;
+		});
+		
+		$(".opening-block.active img").load(function() {
+			$(".opening-block.active .opening-block__show-info").click();
 		});
 		
 		$(".opened-block__hide-link").click(function(){

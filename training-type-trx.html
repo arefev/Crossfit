@@ -48,15 +48,6 @@
 				
 				<div class="popup-content">
 					<form action="">
-						<select name="type" id="selectTrainingList" placeholder="Тип тренировки">
-							<option value="">Тип тренировки</option>
-							<option value="">Персональные тренировки</option>
-							<option value="">Кроссфит</option>
-							<option value="">СФП, TRX</option>
-							<option value="">Powerlifting</option>
-							<option value="">Йога</option>
-							<option value="">Единоборства</option>
-						</select>
 						<input type="text" placeholder="Имя" class="input-text"/>
 						<input type="text" placeholder="Номер телефона" class="input-text"/>
 						<div class="line-text"><span class="line-text__text">или</span></div>
@@ -122,143 +113,35 @@
 				</div>
 			</header> <!-- end .header__fixed -->
 			
-			<div class="header__bottom animation-block" data-animation-class="slideLeft" data-animation-timestart="1800">
+			<div class="header__bottom">
 				<div class="main__center">
-					<div class="callback-button anim-slide-top animation" onclick="showPopup($('#orderCall'))"><span class="callback-button__border">Обратный звонок</span></div>
-					<div class="header__number animation"><a href="#" title="">8 495 363 41 72</a></div>
+					
+					<div class="callback-button anim-slide-top" onclick="showPopup($('#orderCall'))"><span class="callback-button__border">Обратный звонок</span></div>
+					<div class="header__number"><a href="#" title="">8 495 363 41 72</a></div>
+					
+					<div class="breadcrumbs"><a href="#" title="Главная">Главная</a> > Товары</div>
 					<div class="clear"></div>
 				</div>
 			</div> <!-- end .header__bottom -->
 		
-			<section class="index-section main-slider">
-				<div class="main-slider__image" style="background-image:url('images/main-slider/pic_1.jpg'); display:block;"></div>
-				<div class="main-slider__image" style="background-image:url('images/main-slider/pic_2.jpg');"></div>
-				
+			<section class="inner-section training-type-page training-type-page_trx animation-block-run">
 				<div class="main__center">
-					<div class="main-slider__item animation-block" data-animation-class="slideLeft">
-						<div class="main-slider__text" style="display:block">
-							<div class="main-slider__text__orange font-bold animation">STRONG PEOPLE</div>
-							<div class="main-slider__text__white font-bold animation">COMMUNITY</div>
+					<div class="training-type-page__text animation-block" data-animation-class="slideDown">
+						<div class="training-type-page__text__white font-bold animation">Запишись на СФП, TRX.</div>
+						<div class="training-type-page__text__orange font-bold animation">Стань чемпионом. Стань лучше всех.</div>
+						
+						<div class="training-type-page__text__bottom animation">
+							<p>Кроссфит призван к любой жизненной ситуации, требующей активных физических действий.
+							<br/>За счет масштабируемости нагрузок Кроссфит дает возможность людям любого уровня физической подготовки, возраста, физиологических особенностей.</p>
+							<p>За счет масштабируемости нагрузок Кроссфит дает возможность людям любого уровня физической подготовки, возраста, физиологических особенностей.</p>
 						</div>
+						<a href="#" class="services-calc__ask-price anim-slide-top font-bold animation" title="Записаться на тренировку">Записаться на тренировку</a>
 						
-						<div class="main-slider__text">
-							<div class="main-slider__text__orange font-bold animation">Powerlifting</div>
-						</div>
-					
-						<div class="main-slider__arrow main-slider__arrow_left"></div>
-						<div class="main-slider__arrow main-slider__arrow_right"></div>
-						
-						<div class="main-slider__nav"></div> <!-- end .main-slider__nav -->
-					</div> <!-- end .main-slider__item -->
-				</div>
-				<div class="index-section__next"></div>
-			</section> <!-- end .index-section.main-slider -->
-			
-			<section class="index-section training-type">
-				<div class="main__center">
-					<h2 class="index-section__title index-section__title_white animationRun" data-animation-class="slideDown">Типы тренировок</h2>
-					
-					<div class="training-type__logo"><img src="images/training-type-logo.png" alt=""/></div>
-					
-					<div class="training-type__list animation-block" data-animation-class="slideLeft">
-						<!-- left -->
-						<a href="#" title="Powerlifting" class="training-type__item training-type__item_left-bottom animation" data-training-type="powerlifting">
-							<img src="images/temp/pic_16.jpg" alt=""/>
-							<span class="training-type__item__name font-italic"><span class="align">Powerlifting</span></span>
-							<span class="training-type__item__border"></span>
-						</a>
-						
-						<a href="#" title="СФП, TRX" class="training-type__item training-type__item_left-top animation">
-							<img src="images/temp/pic_17.jpg" alt=""/>
-							<span class="training-type__item__name font-italic"><span class="align">СФП, TRX</span></span>
-							<span class="training-type__item__border"></span>
-						</a>
-						
-						<!-- top -->
-						<a href="#" title="Кроссфит" class="training-type__item training-type__item_top-left animation">
-							<img src="images/temp/pic_18.jpg" alt=""/>
-							<span class="training-type__item__name font-italic"><span class="align">Кроссфит</span></span>
-							<span class="training-type__item__border"></span>
-						</a>
-						
-						<a href="#" title="Персональные тренировки" class="training-type__item training-type__item_top-right animation">
-							<img src="images/temp/pic_19.jpg" alt=""/>
-							<span class="training-type__item__name font-italic"><span class="align">Персональные тренировки</span></span>
-							<span class="training-type__item__border"></span>
-						</a>
-						
-						<!-- right -->
-						<a href="#" title="Йога" class="training-type__item training-type__item_right-top animation">
-							<img src="images/temp/pic_20.jpg" alt=""/>
-							<span class="training-type__item__name font-italic"><span class="align">Йога</span></span>
-							<span class="training-type__item__border"></span>
-						</a>
-						
-						<a href="#" title="Единоборства" class="training-type__item training-type__item_right-bottom animation" data-training-type="martial_arts">
-							<img src="images/temp/pic_21.jpg" alt=""/>
-							<span class="training-type__item__name font-italic"><span class="align">Единоборства</span></span>
-							<span class="training-type__item__border"></span>
-						</a>
 					</div>
-					
-					<ul class="advantages animation-block" data-animation-class="fadeIn">
-						<li class="advantages__item animation">
-							<div class="advantages__title"><span class="advantages__title__inner">Аренда Зала</span></div>
-							<div class="advantages__icon"><img src="images/icon-rental.png" alt=""/></div>
-						</li>
-						<li class="advantages__item animation">
-							<div class="advantages__title"><span class="advantages__title__inner">Корпаративные<br/>продажи</span></div>
-							<div class="advantages__icon"><img src="images/icon-corp-sales.png" alt=""/></div>
-						</li>
-						<li class="advantages__item animation">
-							<div class="advantages__title"><span class="advantages__title__inner">Магазин</span></div>
-							<div class="advantages__icon"><img src="images/icon-shop.png" alt=""/></div>
-						</li>
-						<li class="clear"></li>
-					</ul> <!-- end .advantages -->
-					
-					<div class="fade-in-slider fade-in-slider_trainings">
-					
-						<div class="fade-in-slider__item" style="display:block; background-image:url(images/temp/pic_22.png)" data-training-type="powerlifting">
-							<div class="text">
-								<div class="title font-bold">Powerlifting</div>
-								<div class="title-bottom font-bold">Спорт сильных</div>
-								<div class="desc">Пауэрлифтинг также называют силовым троеборьем. Связано это с тем,
-что в качестве соревновательных дисциплин в него входят три упражнения: приседания со штангой на спине (точнее на верхней части лопаток), жим штанги лежа на горизонтальной скамье и тяга штанги — которые в сумме и определяют квалификацию спортсмена.</div>
-
-								<a href="javascript:void(0)" title="Узнать подробнее" class="more-info__link anim-slide-top font-bold">Узнать подробнее</a>
-								
-								<div class="fade-in-slider_trainings-trainers">
-									<h2 class="index-section__title">Тренеры</h2>
-									<div class="item font-bold">Ярослав Ремыга</div>
-									<div class="item font-bold">Ярослав Ремыга</div>
-									<div class="item font-bold">Ярослав Ремыга</div>
-									<br/>
-									<a class="fade-in-slider_trainings__link anim-fill-orange show-popup font-bold" href="javascript:void(0)" title="Записаться на тренировку" data-popup-id="orderCall">Записаться на тренировку</a>
-								</div>
-							</div>
-							<div class="clear"></div>
-						</div> <!-- end .fade-in-slider__item -->
-						
-						<div class="fade-in-slider__item" style="background-image:url(images/temp/pic_22.png)" data-training-type="martial_arts">
-							<div class="text">
-								<div class="title font-bold">Единоборства</div>
-								<div class="title-bottom font-bold">Спорт быстрых</div>
-							</div>
-							<div class="clear"></div>
-						</div> <!-- end .fade-in-slider__item -->
-						
-						<div class="fade-in-slider__arrow fade-in-slider__arrow_left"></div>
-						<div class="fade-in-slider__arrow fade-in-slider__arrow_right"></div>
-						
-						<div class="fade-in-slider_trainings-close"></div>
-					</div>	<!-- end .fade-in-slider -->
-
 				</div>
 				
-				<div class="training-type__fill"></div>
 				<div class="index-section__next"></div>
-			</section> <!-- end .index-section.training-type -->
+			</section> <!-- end .inner-section.training-type-page -->
 			
 			<section class="index-section schedule">
 				<div class="main__center">
@@ -552,150 +435,6 @@
 				<div class="index-section__next"></div>
 			</section> <!-- end .index-section.schedule -->
 			
-			<section class="index-section teachers">
-				<div class="main__center">
-					<h2 class="index-section__title index-section__title_white animationRun" data-animation-class="slideDown">Наши тренеры</h2>
-					
-					<div class="fade-in-slider fade-in-slider_teachers">
-					
-						<div class="fade-in-slider__item" style="display:block">
-							<div class="teachers__photo animationRun" data-animation-class="opacity"><img src="images/temp/pic_2.png" alt=""/></div>
-							<div class="teachers__info font-italic">
-								<div class="teachers__right animation-block" data-animation-class="slideLeft">
-									<div class="teachers__title font-ibold animation">Ярослав<br/>Ремыга</div>
-									<div class="teachers__age animation">Возраст 21 год.</div>
-									
-									<div class="teachers__line"></div>
-									
-									<ul class="teachers__achiev">
-										<li class="teachers__achiev__item animation">МСМК по Тайскому боксу. 2х-кратный Чемпион Мира по Тайскому боксу IFMA.</li>
-										<li class="teachers__achiev__item animation">Чемпион Европы по Тайскому боксу IFMA. 5ти-кратный Чемпион Украины по Тайскому боксу.</li>
-										<li class="teachers__achiev__item animation">Весовая категория 86 кг.</li>
-									</ul>
-									
-									<div class="teachers__line"></div>
-								</div> <!-- end .teachers__right -->
-								
-								<div class="clear"></div>
-								
-								<div class="teachers__schedule" >
-									<div class="teachers__right"><div class="teachers__age animationRun" data-animation-class="slideLeft" data-animation-timestart="500">Расписание Тренера</div></div>
-									<div class="clear"></div>
-									
-									<div class="teachers__schedule__list animation-block" data-animation-class="rotate3DFadeIn" data-animation-timestart="700">
-										<span class="teachers__schedule__item animation">Понедельник 16:00</span>
-										<span class="teachers__schedule__item animation">Понедельник 16:00</span>
-										<span class="teachers__schedule__item animation">Понедельник 16:00</span>
-										<span class="teachers__schedule__item animation">Понедельник 16:00</span>
-										<span class="teachers__schedule__item animation">Понедельник 16:00</span>
-										<span class="teachers__schedule__item animation">Понедельник 16:00</span>
-									</div>
-								</div> <!-- end .teachers__schedule -->
-								
-								<div class="clear"></div>
-								
-								<div class="teachers__right">
-									<a href="#" class="teachers__link anim-fill-orange font-ibold animationRun" title="Записаться на персональную тренировку" data-animation-class="rotate3DFadeIn" data-animation-timestart="800">Записаться на<br/>персональную тренировку</a>
-								</div>
-								
-								<div class="clear"></div>
-							</div> <!-- end .teachers__info -->
-							<div class="clear"></div>
-						</div> <!-- end .fade-in-slider__item -->
-						
-						<div class="fade-in-slider__item">
-							<div class="teachers__photo"><img src="images/temp/pic_2.png" alt=""/></div>
-							<div class="teachers__info font-italic">
-								<div class="teachers__right">
-									<div class="teachers__title font-ibold">Турал<br/>Байрамов</div>
-									<div class="teachers__age">Возраст 32 года.</div>
-									
-									<div class="teachers__line"></div>
-									
-									<ul class="teachers__achiev">
-										<li class="teachers__achiev__item">МСМК по Тайскому боксу. 2х-кратный Чемпион Мира по Тайскому боксу IFMA.</li>
-										<li class="teachers__achiev__item">Чемпион Европы по Тайскому боксу IFMA. 5ти-кратный Чемпион Украины по Тайскому боксу.</li>
-										<li class="teachers__achiev__item">Весовая категория 86 кг.</li>
-										<li class="teachers__achiev__item">Весовая категория 86 кг.</li>
-									</ul>
-									
-									<div class="teachers__line"></div>
-								</div> <!-- end .teachers__right -->
-								
-								<div class="clear"></div>
-								
-								<div class="teachers__schedule">
-									<div class="teachers__right"><div class="teachers__age">Расписание Тренера</div></div>
-									<div class="clear"></div>
-									
-									<div class="teachers__schedule__list">
-										<span class="teachers__schedule__item">Понедельник 16:00</span>
-										<span class="teachers__schedule__item">Вторник 16:00</span>
-										<span class="teachers__schedule__item">Среда 16:00</span>
-									</div>
-								</div> <!-- end .teachers__schedule -->
-								
-								<div class="clear"></div>
-								
-								<div class="teachers__right">
-									<a href="#" class="teachers__link anim-fill-orange font-ibold" title="Записаться на персональную тренировку">Записаться на<br/>персональную тренировку</a>
-								</div>
-								
-								<div class="clear"></div>
-							</div> <!-- end .teachers__info -->
-							<div class="clear"></div>
-						</div> <!-- end .fade-in-slider__item -->
-						
-						<div class="fade-in-slider__item">
-							<div class="teachers__photo"><img src="images/temp/pic_2.png" alt=""/></div>
-							<div class="teachers__info font-italic">
-								<div class="teachers__right">
-									<div class="teachers__title font-ibold">Джабар<br/>Аскеров</div>
-									<div class="teachers__age">Возраст 28 лет.</div>
-									
-									<div class="teachers__line"></div>
-									
-									<ul class="teachers__achiev">
-										<li class="teachers__achiev__item">МСМК по Тайскому боксу. 2х-кратный Чемпион Мира по Тайскому боксу IFMA.</li>
-										<li class="teachers__achiev__item">Чемпион Европы по Тайскому боксу IFMA. 5ти-кратный Чемпион Украины по Тайскому боксу.</li>
-									</ul>
-									
-									<div class="teachers__line"></div>
-								</div> <!-- end .teachers__right -->
-								
-								<div class="clear"></div>
-								
-								<div class="teachers__schedule">
-									<div class="teachers__right"><div class="teachers__age">Расписание Тренера</div></div>
-									<div class="clear"></div>
-									
-									<div class="teachers__schedule__list">
-										<span class="teachers__schedule__item">Понедельник 16:00</span>
-										<span class="teachers__schedule__item">Вторник 16:00</span>
-										<span class="teachers__schedule__item">Среда 16:00</span>
-										<span class="teachers__schedule__item">Среда 16:00</span>
-									</div>
-								</div> <!-- end .teachers__schedule -->
-								
-								<div class="clear"></div>
-								
-								<div class="teachers__right">
-									<a href="#" class="teachers__link anim-fill-orange font-ibold" title="Записаться на персональную тренировку">Записаться на<br/>персональную тренировку</a>
-								</div>
-								
-								<div class="clear"></div>
-							</div> <!-- end .teachers__info -->
-							<div class="clear"></div>
-						</div> <!-- end .fade-in-slider__item -->
-						
-						<div class="fade-in-slider__arrow fade-in-slider__arrow_left"></div>
-						<div class="fade-in-slider__arrow fade-in-slider__arrow_right"></div>
-					</div> <!-- end .fade-in-slider -->
-				</div>
-				
-				<div class="index-section__next"></div>
-			</section> <!-- end .index-section.teachers -->
-			
 			<section class="index-section photo-video">
 				<div class="main__center">
 					<h2 class="index-section__title index-section__title_white animationRun" data-animation-class="slideDown">Фото и видео</h2>
@@ -743,76 +482,9 @@
 					</div>
 					
 				</div>
-				
-				<div class="index-section__next"></div>
 			</section> <!-- end .index-section.photo-video -->
 			
-			<section class="index-section reviews">
-				<div class="main__center">
-					<h2 class="index-section__title animationRun" data-animation-class="slideDown">Отзывы</h2>
-					<div class="fade-in-slider fade-in-slider_reviews">
-						
-						<div class="fade-in-slider__item" style="display:block">
-							<div class="reviews__item">
-								<div class="reviews__left animationRun" data-animation-class="opacity"><img class="reviews__photo" src="images/temp/pic_4.png" alt=""/></div>
-								<div class="reviews__right animation-block" data-animation-class="slideLeft">
-									<div class="reviews__name font-ibold animation">Владимир <span class="reviews__name__item reviews__name__item_orange">Путин</span></div>
-									<div class="reviews__review font-italic animation">"Важно быть сконцентрированным<br/>на сопернике весь бой, до последней секунды"</div>
-								</div>
-								<div class="clear"></div>
-							</div>
-						</div> <!-- end .fade-in-slider__item -->
-						
-						<div class="fade-in-slider__item">
-							<div class="reviews__item">
-								<div class="reviews__left"><img class="reviews__photo" src="images/temp/pic_4.png" alt=""/></div>
-								<div class="reviews__right">
-									<div class="reviews__name font-ibold">Иван <span class="reviews__name__item reviews__name__item_orange">Иванович</span></div>
-									<div class="reviews__review font-italic">"Тяжело на тренировке - легко в бою!"</div>
-								</div>
-								<div class="clear"></div>
-							</div>
-						</div> <!-- end .fade-in-slider__item -->
-						
-						
-						<div class="fade-in-slider__arrow fade-in-slider__arrow_left"></div>
-						<div class="fade-in-slider__arrow fade-in-slider__arrow_right"></div>
-					</div> <!-- end .fade-in-slider -->
-				</div>
-			</section> <!-- end .index-section.reviews -->
-			
-			<section class="index-section contacts">
-				<div class="main__center">
-					<h2 class="index-section__title animationRun" data-animation-class="slideDown">Контакты</h2>
-					
-					<div class="contacts__left animation-block" data-animation-class="slideRight" data-animation-timestart="300">
-						<div class="contacts__title font-bold animation">Мы ждем вас по адресу</div>
-						<div class="animation">105064, Россия,<br/>
-							г. Москва, метро Курская,<br/>
-							Нижний Сусальный пер., д.5, стр. 17</div>
-						<div class="contacts__title font-bold animation">Вы можете связаться с нами:</div>
-						<div class="animation">
-							Телефон: +7 (495) 966-3446<br/>
-							Email: <a href="mailto:info@crossfitarmasmc.ru" title="" class="link">info@crossfitarmasmc.ru</a>
-						</div>
-						<div class="contacts__title contacts__title_margin font-bold animation">У вас остались вопросы?</div>
-						
-						<a href="#" title="Напишите нам" class="contacts__contact-us-link anim-slide-top font-bold animation">Напишите нам</a>
-						<a href="#" title="Запись на персональную тренировку" class="contacts__personal-link anim-slide-top font-bold animation">Запись на персональную тренировку</a>
-					</div>
-					<div class="contacts__right">
-						<img src="images/contacts-map.png" class="contacts__map animationRun" data-animation-class="opacity" alt=""/>
-						<div class="contacts__photo animation-block" data-animation-class="slideLeft" data-animation-timestart="800">
-							<div class="contacts__photo__item animation"></div>
-							<div class="contacts__photo__item animation"></div>
-							<div class="contacts__photo__item animation"></div>
-						</div>
-						<div class="clear"></div>
-					</div>
-					
-					<div class="clear"></div>
-				</div>
-			</section> <!-- end .index-section.contacts -->
+
 			
 			<footer class="footer">
 				<div class="main__center">

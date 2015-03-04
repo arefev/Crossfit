@@ -590,6 +590,13 @@ body {
 		
 		.sub-menu__item.active,
 		.sub-menu__item:hover {
+			background:#ef7d00;
+			color:#FFF;
+		}
+		
+		.top-menu_hidden .sub-menu__item.active,
+		.top-menu_hidden .sub-menu__item:hover {
+			background:transparent;
 			color:#FFF;
 		}
 		
@@ -843,7 +850,7 @@ body {
 		display:inline-block;
 		margin:0 0 0 12px;
 		padding:0 36px;
-		background:#000;
+		background:#161616;
 		color:#FFF;
 		font-size:36px;
 	}
@@ -981,10 +988,12 @@ body {
 		font-size:36px;
 		text-transform:uppercase;
 		text-shadow:0 0 10px #000;
+		letter-spacing:20px;
+		margin:-10px 0 0;
 	}
 	
 	.main-slider__text__orange {
-		font-size:48px;
+		font-size:96px;
 		text-transform:uppercase;
 		color:#f86f00;
 		text-shadow:0 0 10px #000;
@@ -2934,3 +2943,46 @@ body {
 			  box-sizing: border-box;
 	}
 /* --END-- SERVICES */
+
+/* TRAINING TYPE PAGE */
+	.training-type-page {
+		min-height:893px;
+		background:url("../images/training-type-page-1.jpg") center top no-repeat;
+		padding:0;
+	}
+	
+	.training-type-page_power { background-image:url("../images/training-type-page-2.jpg"); }
+	.training-type-page_yoga { background-image:url("../images/training-type-page-3.jpg"); }
+	.training-type-page_personal { background-image:url("../images/training-type-page-4.jpg"); }
+	.training-type-page_trx { background-image:url("../images/training-type-page-5.jpg"); }
+	
+	.training-type-page .main__center {
+		position:relative;
+	}
+	
+	.training-type-page__text {
+		width:100%;
+		color:#FFF;
+		text-align:center;
+		padding-top:354px;
+	}
+	
+	.training-type-page__text__white {
+		font-size:36px;
+		text-transform:uppercase;
+		text-shadow:0 0 10px #000;
+	}
+	
+	.training-type-page__text__orange {
+		font-size:48px;
+		text-transform:uppercase;
+		color:#f86f00;
+		text-shadow:0 0 10px #000;
+	}
+	
+	.training-type-page__text__bottom {
+		max-width:778px;
+		margin:120px auto 40px;
+		font-size:18px;
+	}
+/* --END-- TRAINING TYPE PAGE */
